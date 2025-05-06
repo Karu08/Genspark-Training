@@ -1,0 +1,76 @@
+DATABASE DESIGN
+
+1) Shop that takes orders for custom tailoring
+
+Tables:
+-StatusMaster
+  id, statusMsg
+
+-TypeMaster
+  id, name, status
+
+-Customer
+  id, name, phone, email, addressID, statusID
+
+-CityMaster
+  id, cityName, stateID 
+
+-StateMaster
+  id, stateName
+
+-Address
+  id, doorNo, street, area, zipcode, cityID
+
+-Customer_Address
+  id, name, addressID, customerID
+
+-SizeChart
+  id, measurement
+
+-Order
+  orderNo, orderDate, customerID, order_promised_delivery_date, order_deivery_date, amount, quantity, pickupID, OrderStatus, PaymentID
+
+-Order_Details
+  order_details_no, orderNo, itemID, price, sizeID
+
+-Items
+  id, type, name, price
+
+-Pickup_Delivery_Details
+  id, date, orderNo, status, actual_date, scheduled_date, addressID, type
+
+-Payment_Details
+  id, orderNo, type, amount, status
+
+-Refund_Details
+  refundID, orderNo, refund_initiated_date, refund_date, amount
+
+-----------------------------------------------------------------------------------------------------------------
+
+2) A video store that rents movies to members
+
+Tables:
+-Movie
+  MovieNumber, Title, Category_id
+
+-FormatMaster
+  Format_id, Format_type
+
+-CategoryMaster
+  Category_id, Cat_name
+
+-Member
+  id, name, phoneNo, type_id, fav_cat_id, dependent_id
+
+-TypeMaster
+  type_id, type
+
+-Rent
+  member_id, MovieNumber, Format_id, Category_id, quantity
+
+-Dependents
+  dependent_id, member_id, dependent_name, quantity
+
+-MovieFormat
+  MovieNumber, Format_id
+ 
