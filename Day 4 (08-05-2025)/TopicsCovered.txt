@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------------------------------
+Topics learnt today (08/05/2025):
+
+
+1) Creating a stored procedure with OUT parameter
+
+2) Bulk insert data into a table from a CSV file; using built-in stored procedure
+
+3) Creating procedure with EXCEPTION HANDLING (try.. catch)
+
+4) COMMON TABLE EXPRESSIONS(CTE)
+    -gives temporary results
+    -ROW_NUMBER(), offset
+
+
+5) Functions
+   (i) Scalar value function: returns a single value
+  (ii) Table value function: returns a table
+
+
+6) Stored Procedure vs Function
+   Stored Procedure: 
+	-need not return a value
+	-supports output parameter
+	-supports exception handling
+	-executes explicitly using EXEC
+	-pre compiled (execution plan is generated)
+
+   Function:
+	-must return a value (single value or table)
+	-does not support output parameter
+	-does not support exception handling
+	-executes within a select statement
+	-compiled at runtime
+
+---------------------------------------------------------------------------------------------------------------
+
