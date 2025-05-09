@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------------------------
+Topics Learnt today (09/05/2025):
+
+
+1) Installing PostgreSQL, and getting familiar with its syntax
+
+2) Solving questions on select, joins, CTEs, functions, and stored procedures in PostgreSQL
+
+3) Solving questions on cursors, triggers, and transactions in PostgreSQL
+
+
+---------------------------------------------------------------------------------------------------------------
+
