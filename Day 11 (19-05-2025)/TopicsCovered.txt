@@ -1,0 +1,8 @@
+Any programming language comprises of:
+-sequential statement execution
+-selection (condition-based)
+-iteration (execution of statements multiple times)
+
+int.Parse vs Convert.ToInt32
+
+tryParse
