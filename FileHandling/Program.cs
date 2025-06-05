@@ -1,22 +1,25 @@
 using System.Text;
+using FileHandling.Contexts;
 using FileHandling.Misc;
 using Microsoft.OpenApi.Models;
-//using Npgsql.Replication.PgOutput.Messages;
-
+using Swashbuckle.AspNetCore.Filters;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using FileHandling.Interfaces;
+using FileHandling.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers(); 
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-/*
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
 {
-    opt.SwaggerDoc("v1", new OpenApiInfo { Title = "Clinic API", Version = "v1" });
+    opt.SwaggerDoc("v1", new OpenApiInfo { Title = "Files API", Version = "v1" });
+    //opt.OperationFilter<Swashbuckle.AspNetCore.Filters.UploadOperationFilter>(); 
+
     opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
@@ -48,13 +51,14 @@ builder.Services.AddControllers()
                     opts.JsonSerializerOptions.WriteIndented = true;
                 });
 
-builder.Logging.AddLog4Net();
+//builder.Logging.AddLog4Net();
 
 
-builder.Services.AddDbContext<ClinicContext>(opts =>
+builder.Services.AddDbContext<AppDbContext>(opts =>
 {
     opts.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+/*
 #region  Repositories
 builder.Services.AddTransient<IRepository<int, Doctor>, DoctorRepository>();
 builder.Services.AddTransient<IRepository<int, Patient>, PatinetRepository>();
@@ -63,13 +67,14 @@ builder.Services.AddTransient<IRepository<string, Appointmnet>, AppointmnetRepos
 builder.Services.AddTransient<IRepository<int, DoctorSpeciality>, DoctorSpecialityRepository>();
 builder.Services.AddTransient<IRepository<string, User>, UserRepository>();
 #endregion
-
+*/
 #region Services
-builder.Services.AddTransient<IDoctorService, DoctorService>();
-builder.Services.AddTransient<IOtherContextFunctionities, OtherFuncinalitiesImplementation>();
-builder.Services.AddTransient<IEncryptionService, EncryptionService>();
+//builder.Services.AddTransient<IDoctorService, DoctorService>();
+//builder.Services.AddTransient<IOtherContextFunctionities, OtherFuncinalitiesImplementation>();
+//builder.Services.AddTransient<IEncryptionService, EncryptionService>();
+builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<ITokenService, TokenService>();
-builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
+//builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
 #endregion
 
 #region AuthenticationFilter
@@ -86,7 +91,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     };
                 });
 #endregion
-
+/*
 #region  Misc
 builder.Services.AddAutoMapper(typeof(User));
 builder.Services.AddScoped<CustomExceptionFilter>();
@@ -110,15 +115,19 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseCors();
-app.MapHub<NotificationHub>("/notificationhub");
+app.MapHub<NotifyHub>("/notifyhub");
 
 app.MapControllers();
 
