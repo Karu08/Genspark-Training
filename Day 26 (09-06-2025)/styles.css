@@ -1,0 +1,264 @@
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+h1.main-heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h2.subheading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+
+p.body-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.primary-btn {
+  padding: 12px 24px;
+  background-color: #4656e6;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+  font-family: 'Inter', sans-serif;
+}
+
+.subheading {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  gap: 8px;
+}
+
+.steth-icon {
+  width: 28px;
+  height: 28px;
+  color: #333333;
+}
+
+
+.header-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header-nav a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.outline-btn {
+  padding: 12px 24px;
+  border: 1px solid #666666;
+  background-color: transparent;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 24px;
+  background-color: #c3e5f2;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+    max-width : 600px;
+}
+
+.hero-image {
+    flex : 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.services {
+  padding: 64px 24px;
+  background-color: #FFFFFF;
+}
+
+.services-grid {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  cursor: pointer; 
+}
+.service-card {
+  width: 300px;
+  background-color: #E0E0E0;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.services-grid :hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  color: #333333;
+}
+
+
+
+.testimonials {
+  padding: 32px 24px;
+  background-color: #c3e5f2;
+}
+
+.testimonial {
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+}
+
+.testimonials-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 8px;
+}
+
+.quote-icon {
+  width: 24px;
+  height: 24px;
+  color: #333333;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+  
+  header, nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-nav {
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .primary-btn, .outline-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+
+.site-footer {
+    background-color: #F5F5F5;
+    padding: 48px 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.clinic-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 12px 48px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.day {
+    text-align: left;
+}
+
+.time {
+    text-align: right;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Clinic Sample UI</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+  <h3 class="subheading"><i data-lucide="stethoscope" class="steth-icon"></i>Doctor's Clinic</h2>
+  <nav class="header-nav">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <button class="primary-btn">Log In</button>
+    <button class="outline-btn">Register</button>
+  </nav>
+</header>
+
+    <section class="hero">
+     <div class="hero-text">
+        <h1 class="main-heading">Quality Care for Your Health</h1>
+        <p class="body-text">Our clinic provides the best medical services for you and your family.</p>
+        <button class="primary-btn">Book Appointment</button>
+     </div>
+     <div class="hero-image">
+        <img src="https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827776.jpg?semt=ais_items_boosted&w=740" alt="Doctor"/>
+     </div>
+    </section>
+
+    <section class="services">
+  <h2 class="subheading">Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <i data-lucide="notepad-text"></i>
+      <h3>Primary Care</h3>
+      <p>Provide early care and diagnosis.</p>
+    </div>
+    <div class="service-card">
+      <i data-lucide="baby"></i>
+      <h3>Pediatrics</h3>
+      <p>Provide specialised care for kids.</p>
+    </div>
+    <div class="service-card">
+      <i data-lucide="circle-plus"></i>
+      <h3>Speciality Care</h3>
+      <p>Provide accurate and crucial care.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials">
+  <h2 class="subheading testimonials-heading">
+  What Our Patients Are Saying
+  <i data-lucide="quote" class="quote-icon"></i></h2>
+
+    <div class="testimonial">
+      <p class="body-text">“Excellent service and wonderful staff. I always feel well taken care of.”</p>
+      <p class="body-text">- Rita Nair</p>
+    </div>
+    <div class="testimonial">
+      <p class="body-text">“Doctors were kind and professional.”</p>
+      <p class="body-text">- John Doe</p>
+    </div>
+  </section>
+
+ <footer class="site-footer">
+    <div class="container footer-content">
+        <h3 class="footer-heading">Clinic Hours</h3>
+        <div class="clinic-hours">
+            <div class="day">Monday - Friday</div>
+            <div class="time">8:00 AM - 5:00 PM</div>
+            <div class="day">Saturday</div>
+            <div class="time">9:00 AM - 1:00 PM</div>
+            <div class="day">Sunday</div>
+            <div class="time">Closed</div>
+        </div>
+    </div>
+ </footer>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
