@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj": {}
+    "/Users/karunya/Documents/Presidio-Genspark Training/Genspark-Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj": {}
   },
   "projects": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj": {
+    "/Users/karunya/Documents/Presidio-Genspark Training/Genspark-Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karunya/Documents/Presidio-Genspark Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj",
+        "projectUniqueName": "/Users/karunya/Documents/Presidio-Genspark Training/Genspark-Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj",
         "projectName": "FileHandling",
-        "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj",
+        "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Genspark-Training/Day 24 (05-06-2025)/FileHandling/FileHandling.csproj",
         "packagesPath": "/Users/karunya/.nuget/packages/",
-        "outputPath": "/Users/karunya/Documents/Presidio-Genspark Training/Day 24 (05-06-2025)/FileHandling/obj/",
+        "outputPath": "/Users/karunya/Documents/Presidio-Genspark Training/Genspark-Training/Day 24 (05-06-2025)/FileHandling/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karunya/.nuget/NuGet/NuGet.Config"
