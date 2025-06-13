@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Order Status Updates</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f8fa;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    li {
+      background: #ffffff;
+      margin-bottom: 12px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Order Status Updates</h1>
+  <ul id="updates">
+    <li>Waiting for order updates...</li>
+  </ul>
+
+  <footer>
+    Powered by SignalR • Online Grocery Portal
+  </footer>
+
+  <script>
+    const connection = new signalR.HubConnectionBuilder()
+      .withUrl("http://localhost:5163/orderHub")
+      .configureLogging(signalR.LogLevel.Information)
+      .build();
+
+    connection.on("ReceiveOrderStatusUpdate", (orderId, status) => {
+      const li = document.createElement("li");
+      li.innerHTML = `Order <code>${orderId}</code> ➜ <span class="status">${status}</span>`;
+      document.getElementById("updates").appendChild(li);
+    });
+
+    connection.start()
+      .then(() => {
+        console.log("SignalR connected");
+        document.getElementById("updates").innerHTML = ""; 
+      })
+      .catch(err => {
+        console.error("SignalR connection failed:", err);
+      });
+  </script>
+</body>
+</html>
