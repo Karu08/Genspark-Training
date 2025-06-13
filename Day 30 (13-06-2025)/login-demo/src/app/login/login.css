@@ -1,0 +1,41 @@
+/* .login-container, .profile-container {
+    text-align: center;
+    max-width: 320px;
+    margin: 100px auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+} */
+
+.loginDiv{
+    width: 40%;
+}

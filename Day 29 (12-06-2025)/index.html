@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fetch User Details</h1>
+  <div class="container">
+    <button onclick="loadWithCallback()">Callback</button>
+    <button onclick="loadWithPromise()">Promise</button>
+    <button onclick="loadWithAsyncAwait()">Async/Await</button>
+  </div>
+  <div id="output"></div>
+
+  <script>
+    const users = [
+      { id: 101, name: "Neha", email: "neha@gmail.com" },
+      { id: 102, name: "Rajiv", email: "rajiv@gmail.com" },
+      { id: 103, name: "Ramu", email: "ramu@gmail.com" }
+    ];
+
+    function showError(message) {
+      document.getElementById("output").innerHTML = `<p class="error">❌ ${message}</p>`;
+    }
+
+    // Simulate fetch with callback
+    function simulateFetch(data, delay = 1000, callback, errorCallback) {
+      setTimeout(() => {
+        const randomFail = Math.random() < 0.3; // 30% chance of failure
+        if (randomFail) {
+          errorCallback("Callback Error: Failed to fetch users.");
+        } else {
+          callback(data);
+        }
+      }, delay);
+    }
+
+    // Simulate fetch with promise
+    function fetchUsersWithPromise() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          const randomFail = Math.random() < 0.3;
+          if (randomFail) {
+            reject("Promise Error: Failed to fetch users.");
+          } else {
+            resolve(users);
+          }
+        }, 1000);
+      });
+    }
+
+    // Display user data
+    function displayUsers(userList) {
+      const outputDiv = document.getElementById("output");
+      let html = `<table>
+        <tr><th>ID</th><th>Name</th><th>Email</th></tr>`;
+      userList.forEach(user => {
+        html += `<tr>
+          <td>${user.id}</td>
+          <td>${user.name}</td>
+          <td>${user.email}</td>
+        </tr>`;
+      });
+      html += `</table>`;
+      outputDiv.innerHTML = html;
+    }
+
+    // Callback version with error handling
+    function loadWithCallback() {
+      simulateFetch(users, 1000, displayUsers, showError);
+    }
+
+    // Promise version with error handling
+    function loadWithPromise() {
+      fetchUsersWithPromise()
+        .then(displayUsers)
+        .catch(showError);
+    }
+
+    // Async/Await version with error handling
+    async function loadWithAsyncAwait() {
+      try {
+        const data = await fetchUsersWithPromise();
+        displayUsers(data);
+      } catch (error) {
+        showError(error);
+      }
+    }
+  </script>
+</body>
+</html>

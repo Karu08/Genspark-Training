@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Fetch User Details</h1>
+  <div class = "container">
+    <button onclick="loadWithCallback()">Callback</button>
+    <button onclick="loadWithPromise()">Promise</button>
+    <button onclick="loadWithAsyncAwait()">Async/Await</button>
+  </div>
+  <div id="output"></div>
+ 
+  <script>
+    const users = [
+      { id: 101, name: "Neha", email: "neha@gmail.com" },
+      { id: 102, name: "Rajiv", email: "rajiv@gmail.com" },
+      { id: 103, name: "Ramu", email: "ramu@gmail.com" }
+    ];
+ 
+    function simulateFetch(data, delay = 1000, callback) {
+      setTimeout(() => {
+        callback(data);
+      }, delay);
+    }
+ 
+    function fetchUsersWithPromise() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(users);
+        }, 1000);
+      });
+    }
+ 
+    function displayUsers(userList) {
+      const outputDiv = document.getElementById("output");
+      let html = `<table>
+        <tr><th>ID</th><th>Name</th><th>Email</th></tr>`;
+      userList.forEach(user => {
+        html += `<tr>
+          <td>${user.id}</td>
+          <td>${user.name}</td>
+          <td>${user.email}</td>
+        </tr>`;
+      });
+      html += `</table>`;
+      outputDiv.innerHTML = html;
+    }
+ 
+
+    function loadWithCallback() {
+      simulateFetch(users, 1000, displayUsers);
+    }
+ 
+    
+    function loadWithPromise() {
+      fetchUsersWithPromise().then(displayUsers);
+    }
+ 
+    
+    async function loadWithAsyncAwait() {
+      const data = await fetchUsersWithPromise();
+      displayUsers(data);
+    }
+  </script>
+</body>
+</html>
