@@ -1,0 +1,8 @@
+<div class="card">
+  <h2>{{ weather.city }}</h2>
+  <img [src]="weather.icon" [alt]="weather.condition">
+  <p><strong>{{ weather.temperature }}°C</strong></p>
+  <p>Condition: {{ weather.condition }}</p>
+  <p>Humidity: {{ weather.humidity }}%</p>
+  <p>Wind: {{ weather.windSpeed }} km/h</p>
+</div>

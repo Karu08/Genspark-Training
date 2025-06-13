@@ -1,0 +1,11 @@
+<h1 class="title">Weather Dashboard</h1>
+<br>
+
+<div class="dashboard">
+  <app-city-search></app-city-search>
+
+  <app-weather-card 
+    *ngIf="weather$ | async as weather"
+    [weather]="weather">
+  </app-weather-card>
+</div>
