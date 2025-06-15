@@ -10,29 +10,17 @@ using Microsoft.OpenApi.Models;
 using AspNetCoreRateLimit;
 using System.Text;
 using OnlineGroceryPortal.Services.Misc;
-using Serilog;
-
-
-// Log.Logger = new LoggerConfiguration()
-//     .WriteTo.Console()
-//     .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
-//     .Enrich.FromLogContext()
-//     .MinimumLevel.Information()
-//     .CreateLogger();
-
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
-//builder.Host.UseSerilog();
-
-// Optional: Show token validation details during development
+// Show detailed token validation errors in development
 IdentityModelEventSource.ShowPII = true;
 
-// Add controllers
+// Add services to the container
 builder.Services.AddControllers();
 
-// Add DbContext
 builder.Services.AddDbContext<GroceryDbContext>(options =>
     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
@@ -48,26 +36,20 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 
 // Swagger + JWT Auth Support
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(opt =>
+builder.Services.AddSwaggerGen(c =>
 {
-    opt.EnableAnnotations();
-    opt.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Online Grocery Portal API",
-        Version = "v1",
-        Description = "API for managing an online grocery store."
-    });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Online Grocery Portal API", Version = "v1" });
 
-    opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
+        Description = "JWT Authorization header using the Bearer scheme.\n\nEnter 'Bearer' followed by your token.",
         Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
     });
 
-    opt.AddSecurityRequirement(new OpenApiSecurityRequirement
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
             new OpenApiSecurityScheme
@@ -83,42 +65,43 @@ builder.Services.AddSwaggerGen(opt =>
     });
 });
 
-// JWT Authentication Setup
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+// JWT Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = configuration["Jwt:Issuer"],
-        ValidAudience = configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!)
-        ),
-        RoleClaimType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
-    };
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = configuration["Jwt:Issuer"],
+            ValidAudience = configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!)),
+            RoleClaimType = ClaimTypes.Role
+        };
 
-    options.Events = new JwtBearerEvents
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
     {
-        OnAuthenticationFailed = context =>
-        {
-            Console.WriteLine($"JWT auth failed: {context.Exception.Message}");
-            return Task.CompletedTask;
-        },
-        OnTokenValidated = context =>
-        {
-            Console.WriteLine("JWT token validated");
-            return Task.CompletedTask;
-        }
-    };
-});
+        var bearerToken = context.Request.Headers["Authorization"].ToString();
+        var token = bearerToken.StartsWith("Bearer ") ? bearerToken.Substring(7) : bearerToken;
+        Console.WriteLine($"🔒 Incoming token (clean): {token}");
+        return Task.CompletedTask;
+    },
+            OnAuthenticationFailed = context =>
+            {
+                Console.WriteLine($"JWT auth failed: {context.Exception.Message}");
+                return Task.CompletedTask;
+            },
+            OnTokenValidated = context =>
+            {
+                Console.WriteLine("JWT token validated");
+                return Task.CompletedTask;
+            }
+        };
+    });
 
 // Rate Limiting
 builder.Services.AddMemoryCache();
@@ -127,21 +110,19 @@ builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>()
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSignalR();
 
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy
-            .WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials(); 
+        policy.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
 
 var app = builder.Build();
-
-
 
 // Middleware pipeline
 if (app.Environment.IsDevelopment())
@@ -155,7 +136,6 @@ app.UseIpRateLimiting();
 app.Use(async (context, next) =>
 {
     await next();
-
     if (context.Response.StatusCode == 429)
     {
         context.Response.ContentType = "application/json";
@@ -163,12 +143,8 @@ app.Use(async (context, next) =>
     }
 });
 
-
 app.UseRouting();
-app.UseCors(); 
-
-
-
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -181,7 +157,6 @@ app.UseEndpoints(endpoints =>
 app.Use(async (context, next) =>
 {
     await next();
-
     if (context.Response.StatusCode == 401)
     {
         Console.WriteLine("Unauthorized - Token may be invalid or expired.");

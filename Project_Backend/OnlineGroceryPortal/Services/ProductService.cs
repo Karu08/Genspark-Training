@@ -70,7 +70,6 @@ namespace OnlineGroceryPortal.Services
         {
             var product = new Product
             {
-                Id = Guid.NewGuid(),
                 ProdName = dto.Name,
                 Description = dto.Description,
                 Type = dto.Type,

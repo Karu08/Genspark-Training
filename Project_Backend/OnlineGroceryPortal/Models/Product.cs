@@ -2,7 +2,7 @@ namespace OnlineGroceryPortal.Models
 {
     public class Product
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public long Id { get; set; }
 
         public string ProdName { get; set; } = null!;
         public string Type { get; set; } = null!;  //fruit, veg, etc
@@ -17,9 +17,7 @@ namespace OnlineGroceryPortal.Models
 
         //audit
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public string? CreatedBy { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public string? UpdatedBy { get; set; }
+       
 
     }
 }

@@ -19,7 +19,7 @@ namespace OnlineGroceryPortal.Repositories
             return order;
         }
 
-        public async Task<Order?> GetByIdAsync(Guid orderId)
+        public async Task<Order?> GetByIdAsync(long orderId)
         {
             return await _context.Orders.FirstOrDefaultAsync(o => o.Id == orderId);
         }

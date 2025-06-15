@@ -54,7 +54,7 @@ namespace OnlineGroceryPortal.Controllers
             return Ok(products);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateProductDto dto)
         {
@@ -63,7 +63,7 @@ namespace OnlineGroceryPortal.Controllers
             return CreatedAtAction(nameof(GetAll), new { id = product.Id }, product);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateProductDto dto)
         {
@@ -78,7 +78,7 @@ namespace OnlineGroceryPortal.Controllers
             }
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
 
         public async Task<IActionResult> Delete(Guid id)

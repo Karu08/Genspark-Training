@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {}
+    "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {}
   },
   "projects": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
+    "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
+        "projectUniqueName": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
         "projectName": "OnlineGroceryPortal",
-        "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
+        "projectPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
         "packagesPath": "/Users/karunya/.nuget/packages/",
-        "outputPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/obj/",
+        "outputPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karunya/.nuget/NuGet/NuGet.Config"
@@ -54,7 +54,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[9.0.6, )"
             },
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",

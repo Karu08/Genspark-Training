@@ -2,10 +2,10 @@ namespace OnlineGroceryPortal.Models
 {
     public class OrderItem
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public long Id { get; set; }
 
-        public Guid OrderId { get; set; }
-        public Guid ProductId { get; set; }
+        public long OrderId { get; set; }
+        public long ProductId { get; set; }
         public float Quantity { get; set; }
         public float Price { get; set; }
 
@@ -14,8 +14,5 @@ namespace OnlineGroceryPortal.Models
 
         //audit
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public string? CreatedBy { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public string? UpdatedBy { get; set; }
     }
 }

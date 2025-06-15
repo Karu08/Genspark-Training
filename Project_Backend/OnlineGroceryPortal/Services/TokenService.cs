@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using OnlineGroceryPortal.Interfaces;
 using OnlineGroceryPortal.Models;
@@ -13,40 +13,58 @@ namespace OnlineGroceryPortal.Services
     public class TokenService : ITokenService
     {
         private readonly IConfiguration _config;
+
         public TokenService(IConfiguration config)
         {
             _config = config;
         }
+
         public TokenDto GenerateToken(User user)
+{
+    var tokenHandler = new JwtSecurityTokenHandler();
+    var key = Encoding.UTF8.GetBytes(_config["Jwt:Key"]!);
+
+    var tokenDescriptor = new SecurityTokenDescriptor
+    {
+        Subject = new ClaimsIdentity(new[]
         {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), 
-                new Claim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", user.Role)
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.Role, user.Role)
+        }),
+        Expires = DateTime.UtcNow.AddMinutes(
+            double.Parse(_config["Jwt:AccessTokenExpirationMinutes"] ?? "60")
+        ),
+        Issuer = _config["Jwt:Issuer"],
+        Audience = _config["Jwt:Audience"],
+        SigningCredentials = new SigningCredentials(
+            new SymmetricSecurityKey(key),
+            SecurityAlgorithms.HmacSha256Signature
+        )
+    };
 
-            };
+    var token = tokenHandler.CreateToken(tokenDescriptor);
+    var accessToken = tokenHandler.WriteToken(token);
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+    // Generate secure refresh token
+    var refreshToken = GenerateSecureRefreshToken();
+    RefreshTokenStore.Tokens[user.Username] = refreshToken;
 
-            var accessToken = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddMinutes(60),
-                signingCredentials: creds
-            );
+    return new TokenDto
+    {
+        AccessToken = accessToken,
+        RefreshToken = refreshToken,
+        ExpiresAt = token.ValidTo
+    };
+}
 
-            var refreshToken = Guid.NewGuid().ToString();
 
-            RefreshTokenStore.Tokens[user.Username] = refreshToken;
-
-            return new TokenDto
-            {
-                AccessToken = new JwtSecurityTokenHandler().WriteToken(accessToken),
-                RefreshToken = refreshToken,
-                ExpiresAt = accessToken.ValidTo
-            };
+        private string GenerateSecureRefreshToken()
+        {
+            var randomBytes = new byte[64];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomBytes);
+            return Convert.ToBase64String(randomBytes);
         }
     }
 }

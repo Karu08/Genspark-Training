@@ -1,0 +1,1966 @@
+2025-06-16 01:02:24.194 +05:30 [INF] 🔧 Starting up application...
+2025-06-16 01:02:24.481 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-16 01:02:24.547 +05:30 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-06-16 01:02:24.574 +05:30 [DBG] Hosting starting
+2025-06-16 01:02:24.585 +05:30 [INF] User profile is available. Using '/Users/karunya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-16 01:02:24.596 +05:30 [DBG] Reading data from file '/Users/karunya/.aspnet/DataProtection-Keys/key-d15ea09e-8eb9-4eb1-ba76-a62502620350.xml'.
+2025-06-16 01:02:24.604 +05:30 [DBG] Found key {d15ea09e-8eb9-4eb1-ba76-a62502620350}.
+2025-06-16 01:02:24.614 +05:30 [DBG] Considering key {d15ea09e-8eb9-4eb1-ba76-a62502620350} with expiration date 2025-08-31 17:21:26Z as default key.
+2025-06-16 01:02:24.616 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-16 01:02:24.620 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-16 01:02:24.620 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-16 01:02:24.625 +05:30 [DBG] Using key {d15ea09e-8eb9-4eb1-ba76-a62502620350} as the default key.
+2025-06-16 01:02:24.626 +05:30 [DBG] Key ring with default key {d15ea09e-8eb9-4eb1-ba76-a62502620350} was loaded during application startup.
+2025-06-16 01:02:24.666 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-16 01:02:24.669 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-16 01:02:24.682 +05:30 [INF] Now listening on: http://localhost:5263
+2025-06-16 01:02:24.682 +05:30 [DBG] Loaded hosting startup assembly OnlineGroceryPortal
+2025-06-16 01:02:24.682 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-16 01:02:24.683 +05:30 [INF] Hosting environment: Development
+2025-06-16 01:02:24.683 +05:30 [INF] Content root path: /Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal
+2025-06-16 01:02:24.685 +05:30 [DBG] Hosting started
+2025-06-16 01:02:24.700 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" accepted.
+2025-06-16 01:02:24.701 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" started.
+2025-06-16 01:02:24.727 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:24.748 +05:30 [DBG] OPTIONS requests are not supported
+2025-06-16 01:02:24.808 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:24.809 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.811 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:24.811 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:24.812 +05:30 [DBG] The request is a preflight request.
+2025-06-16 01:02:24.816 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" completed keep alive response.
+2025-06-16 01:02:24.817 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 204 null null 91.5047ms
+2025-06-16 01:02:24.820 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:24.821 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:24.822 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:24.822 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.822 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:24.822 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:24.852 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" received FIN.
+2025-06-16 01:02:24.852 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:24.853 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:24.855 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.859 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" disconnecting.
+2025-06-16 01:02:24.861 +05:30 [DBG] New connection PN0QYBDPRpmTsNrjaOWMqg created.
+2025-06-16 01:02:24.872 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:24.873 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.874 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 53.743ms
+2025-06-16 01:02:24.874 +05:30 [DBG] Connection id "0HNDC8DDGUUIB" stopped.
+2025-06-16 01:02:24.899 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" accepted.
+2025-06-16 01:02:24.900 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" started.
+2025-06-16 01:02:24.900 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:24.901 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:24.903 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:24.903 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.903 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:24.904 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:24.905 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:24.905 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.906 +05:30 [DBG] New connection 8dxroU9gfcTIy9JzX-fFOQ created.
+2025-06-16 01:02:24.906 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:24.907 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:24.907 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:24.907 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 7.012ms
+2025-06-16 01:02:24.911 +05:30 [DBG] Connection id "0HNDC8DDGUUID" accepted.
+2025-06-16 01:02:24.912 +05:30 [DBG] Connection id "0HNDC8DDGUUID" started.
+2025-06-16 01:02:24.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=4hQotVB2hQZtzb_rn1IQ7A - null null
+2025-06-16 01:02:24.917 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:24.918 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:24.918 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:24.918 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:24.918 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:24.920 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:24.920 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:24.924 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:24.928 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:24.931 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:24.940 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:24.942 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:25.054 +05:30 [DBG] Connection id "0HNDC8DDGUUID" received FIN.
+2025-06-16 01:02:25.054 +05:30 [DBG] Connection id "0HNDC8DDGUUID" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:25.055 +05:30 [DBG] Connection id "0HNDC8DDGUUID" disconnecting.
+2025-06-16 01:02:25.055 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:25.057 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:25.060 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:25.061 +05:30 [DBG] Removing connection 4hQotVB2hQZtzb_rn1IQ7A from the list of connections.
+2025-06-16 01:02:25.062 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:25.064 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=4hQotVB2hQZtzb_rn1IQ7A - 101 null null 152.0975ms
+2025-06-16 01:02:25.066 +05:30 [DBG] Connection id "0HNDC8DDGUUID" stopped.
+2025-06-16 01:02:25.091 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:25.091 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:25.092 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:25.092 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.092 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.092 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.093 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.093 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.093 +05:30 [DBG] New connection P9pYmS_xes2dl98vJltClw created.
+2025-06-16 01:02:25.094 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:25.094 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.094 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:25.094 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.1136ms
+2025-06-16 01:02:25.099 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" accepted.
+2025-06-16 01:02:25.099 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" started.
+2025-06-16 01:02:25.099 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=O-h24bi1qZ-SRIFuBUlnmw - null null
+2025-06-16 01:02:25.100 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:25.100 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:25.100 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:25.101 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.101 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.101 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.101 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:25.101 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:25.101 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:25.102 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:25.103 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:25.103 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:25.259 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" received FIN.
+2025-06-16 01:02:25.259 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:25.259 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:25.259 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:25.260 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" disconnecting.
+2025-06-16 01:02:25.260 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:25.260 +05:30 [DBG] Removing connection O-h24bi1qZ-SRIFuBUlnmw from the list of connections.
+2025-06-16 01:02:25.261 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:25.261 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=O-h24bi1qZ-SRIFuBUlnmw - 101 null null 161.7134ms
+2025-06-16 01:02:25.261 +05:30 [DBG] Connection id "0HNDC8DDGUUIE" stopped.
+2025-06-16 01:02:25.296 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:25.296 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:25.297 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:25.297 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.297 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.297 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.298 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.298 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.298 +05:30 [DBG] New connection _pamHCuyF4s3awcVydlLpg created.
+2025-06-16 01:02:25.298 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:25.298 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.298 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:25.299 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.8896ms
+2025-06-16 01:02:25.303 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" accepted.
+2025-06-16 01:02:25.303 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" started.
+2025-06-16 01:02:25.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=HoE6WLw6ilzltRvSLxwIOw - null null
+2025-06-16 01:02:25.304 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:25.305 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:25.305 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:25.305 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.305 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.306 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.306 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:25.306 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:25.306 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:25.306 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:25.307 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:25.308 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:25.466 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" received FIN.
+2025-06-16 01:02:25.466 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:25.466 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:25.466 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:25.466 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" disconnecting.
+2025-06-16 01:02:25.466 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:25.467 +05:30 [DBG] Removing connection HoE6WLw6ilzltRvSLxwIOw from the list of connections.
+2025-06-16 01:02:25.467 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:25.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=HoE6WLw6ilzltRvSLxwIOw - 101 null null 163.2586ms
+2025-06-16 01:02:25.467 +05:30 [DBG] Connection id "0HNDC8DDGUUIF" stopped.
+2025-06-16 01:02:25.504 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:25.504 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:25.504 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:25.505 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.505 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.505 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.506 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.506 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.506 +05:30 [DBG] New connection zHwOIpwDejExc6jABi78yw created.
+2025-06-16 01:02:25.506 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:25.507 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.507 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:25.507 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.4052ms
+2025-06-16 01:02:25.513 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" accepted.
+2025-06-16 01:02:25.513 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" started.
+2025-06-16 01:02:25.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=TIadKtDmFlR1Ol2i4H-rlw - null null
+2025-06-16 01:02:25.514 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:25.514 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:25.514 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:25.514 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.514 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.514 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.515 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:25.515 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:25.515 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:25.515 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:25.516 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:25.516 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:25.672 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" received FIN.
+2025-06-16 01:02:25.672 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:25.672 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:25.672 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:25.673 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" disconnecting.
+2025-06-16 01:02:25.673 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:25.673 +05:30 [DBG] Removing connection TIadKtDmFlR1Ol2i4H-rlw from the list of connections.
+2025-06-16 01:02:25.673 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:25.673 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=TIadKtDmFlR1Ol2i4H-rlw - 101 null null 159.926ms
+2025-06-16 01:02:25.674 +05:30 [DBG] Connection id "0HNDC8DDGUUIG" stopped.
+2025-06-16 01:02:25.711 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:25.712 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:25.712 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:25.712 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.713 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.713 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.713 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.713 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.714 +05:30 [DBG] New connection AfDDFc29OxZ_6rjmFRA9nQ created.
+2025-06-16 01:02:25.714 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:25.714 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.714 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:25.714 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.8554ms
+2025-06-16 01:02:25.719 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" accepted.
+2025-06-16 01:02:25.719 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" started.
+2025-06-16 01:02:25.719 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=UZ8jnWZzti43AXqeaAygVQ - null null
+2025-06-16 01:02:25.720 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:25.720 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:25.720 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:25.720 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.720 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.720 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.721 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:25.721 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:25.721 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:25.721 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:25.722 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:25.722 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:25.878 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" received FIN.
+2025-06-16 01:02:25.878 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:25.878 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:25.878 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:25.878 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" disconnecting.
+2025-06-16 01:02:25.879 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:25.879 +05:30 [DBG] Removing connection UZ8jnWZzti43AXqeaAygVQ from the list of connections.
+2025-06-16 01:02:25.879 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:25.879 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=UZ8jnWZzti43AXqeaAygVQ - 101 null null 159.6779ms
+2025-06-16 01:02:25.879 +05:30 [DBG] Connection id "0HNDC8DDGUUIH" stopped.
+2025-06-16 01:02:25.918 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:25.919 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:25.919 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:25.919 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.919 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.920 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.920 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.920 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.920 +05:30 [DBG] New connection rg9ZNzJDq4_2y8HC-mhn-g created.
+2025-06-16 01:02:25.921 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:25.921 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:25.921 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:25.921 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.015ms
+2025-06-16 01:02:25.926 +05:30 [DBG] Connection id "0HNDC8DDGUUII" accepted.
+2025-06-16 01:02:25.926 +05:30 [DBG] Connection id "0HNDC8DDGUUII" started.
+2025-06-16 01:02:25.927 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=bmZnEl-eiwNAfbndwHa4Jg - null null
+2025-06-16 01:02:25.927 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:25.928 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:25.928 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:25.928 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:25.928 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:25.928 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:25.928 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:25.929 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:25.929 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:25.929 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:25.930 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:25.930 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:26.088 +05:30 [DBG] Connection id "0HNDC8DDGUUII" received FIN.
+2025-06-16 01:02:26.088 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:26.088 +05:30 [DBG] Connection id "0HNDC8DDGUUII" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:26.088 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:26.088 +05:30 [DBG] Connection id "0HNDC8DDGUUII" disconnecting.
+2025-06-16 01:02:26.089 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:26.089 +05:30 [DBG] Removing connection bmZnEl-eiwNAfbndwHa4Jg from the list of connections.
+2025-06-16 01:02:26.089 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:26.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=bmZnEl-eiwNAfbndwHa4Jg - 101 null null 162.3202ms
+2025-06-16 01:02:26.090 +05:30 [DBG] Connection id "0HNDC8DDGUUII" stopped.
+2025-06-16 01:02:26.126 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:26.127 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:26.127 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:26.128 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.128 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.128 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.129 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.129 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.129 +05:30 [DBG] New connection OCod53B1yuwC0B3SxDF5sw created.
+2025-06-16 01:02:26.129 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:26.129 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.129 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:26.130 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.4622ms
+2025-06-16 01:02:26.134 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" accepted.
+2025-06-16 01:02:26.134 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" started.
+2025-06-16 01:02:26.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=_jiOCoHc_LEjQdkyIHfYwg - null null
+2025-06-16 01:02:26.135 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:26.135 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:26.135 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:26.136 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.136 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.136 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.136 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:26.136 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:26.136 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:26.136 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:26.137 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:26.138 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:26.292 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" received FIN.
+2025-06-16 01:02:26.292 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:26.292 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:26.292 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:26.293 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" disconnecting.
+2025-06-16 01:02:26.293 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:26.293 +05:30 [DBG] Removing connection _jiOCoHc_LEjQdkyIHfYwg from the list of connections.
+2025-06-16 01:02:26.294 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:26.294 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=_jiOCoHc_LEjQdkyIHfYwg - 101 null null 158.8488ms
+2025-06-16 01:02:26.294 +05:30 [DBG] Connection id "0HNDC8DDGUUIJ" stopped.
+2025-06-16 01:02:26.340 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:26.340 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:26.341 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:26.341 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.342 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.342 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.342 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.343 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.343 +05:30 [DBG] New connection J9Aoyi5qLPv7Rjz3DHmnww created.
+2025-06-16 01:02:26.343 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:26.343 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.344 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:26.344 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.8905ms
+2025-06-16 01:02:26.349 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" accepted.
+2025-06-16 01:02:26.350 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" started.
+2025-06-16 01:02:26.350 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=mqL5gWj2bEFQrbPi3Ub7ww - null null
+2025-06-16 01:02:26.350 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:26.351 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:26.351 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:26.351 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.352 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.352 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.352 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:26.352 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:26.352 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:26.352 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:26.354 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:26.354 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:26.493 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" received FIN.
+2025-06-16 01:02:26.493 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:26.493 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:26.494 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:26.494 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" disconnecting.
+2025-06-16 01:02:26.494 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:26.494 +05:30 [DBG] Removing connection mqL5gWj2bEFQrbPi3Ub7ww from the list of connections.
+2025-06-16 01:02:26.494 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:26.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=mqL5gWj2bEFQrbPi3Ub7ww - 101 null null 144.7329ms
+2025-06-16 01:02:26.495 +05:30 [DBG] Connection id "0HNDC8DDGUUIK" stopped.
+2025-06-16 01:02:26.533 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:26.533 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:26.534 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:26.534 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.534 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.534 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.535 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.535 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.535 +05:30 [DBG] New connection q8sGs4E2j45c9GZAxgBjAQ created.
+2025-06-16 01:02:26.535 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:26.536 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.536 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:26.536 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.86ms
+2025-06-16 01:02:26.541 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" accepted.
+2025-06-16 01:02:26.541 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" started.
+2025-06-16 01:02:26.541 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=yAn4zNa0azuKd59YYr2ARw - null null
+2025-06-16 01:02:26.541 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:26.542 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:26.542 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:26.542 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.542 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.542 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.542 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:26.542 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:26.543 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:26.543 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:26.544 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:26.544 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:26.701 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" received FIN.
+2025-06-16 01:02:26.701 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:26.702 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:26.702 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:26.702 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" disconnecting.
+2025-06-16 01:02:26.702 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:26.703 +05:30 [DBG] Removing connection yAn4zNa0azuKd59YYr2ARw from the list of connections.
+2025-06-16 01:02:26.703 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:26.703 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=yAn4zNa0azuKd59YYr2ARw - 101 null null 161.8453ms
+2025-06-16 01:02:26.703 +05:30 [DBG] Connection id "0HNDC8DDGUUIL" stopped.
+2025-06-16 01:02:26.741 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:26.742 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:26.742 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:26.742 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.743 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.743 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.744 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.744 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.744 +05:30 [DBG] New connection wudXJOiBzVFnhj7OmaGK9g created.
+2025-06-16 01:02:26.744 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:26.744 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.745 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:26.745 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.4008ms
+2025-06-16 01:02:26.750 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" accepted.
+2025-06-16 01:02:26.750 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" started.
+2025-06-16 01:02:26.750 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=NYwVDMK6jNSe1rfUQJdhKA - null null
+2025-06-16 01:02:26.750 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:26.751 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:26.751 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:26.751 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.751 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.751 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.751 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:26.751 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:26.752 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:26.752 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:26.753 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:26.753 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:26.903 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" received FIN.
+2025-06-16 01:02:26.903 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:26.903 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:26.903 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:26.903 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" disconnecting.
+2025-06-16 01:02:26.904 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:26.904 +05:30 [DBG] Removing connection NYwVDMK6jNSe1rfUQJdhKA from the list of connections.
+2025-06-16 01:02:26.904 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:26.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=NYwVDMK6jNSe1rfUQJdhKA - 101 null null 153.8702ms
+2025-06-16 01:02:26.904 +05:30 [DBG] Connection id "0HNDC8DDGUUIM" stopped.
+2025-06-16 01:02:26.947 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:26.947 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:26.947 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:26.947 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.948 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.948 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.948 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.948 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.948 +05:30 [DBG] New connection H5bq2SSdsbWHbkQdA13wgw created.
+2025-06-16 01:02:26.949 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:26.949 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:26.949 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:26.949 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.7709ms
+2025-06-16 01:02:26.956 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" accepted.
+2025-06-16 01:02:26.956 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" started.
+2025-06-16 01:02:26.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=mbCWW5BWK9FLlTeLJ_PEXg - null null
+2025-06-16 01:02:26.957 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:26.957 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:26.957 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:26.957 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:26.957 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:26.958 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:26.958 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:26.958 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:26.958 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:26.958 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:26.959 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:26.959 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:27.112 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" received FIN.
+2025-06-16 01:02:27.112 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:27.112 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:27.112 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" disconnecting.
+2025-06-16 01:02:27.112 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:27.113 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:27.113 +05:30 [DBG] Removing connection mbCWW5BWK9FLlTeLJ_PEXg from the list of connections.
+2025-06-16 01:02:27.113 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:27.113 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=mbCWW5BWK9FLlTeLJ_PEXg - 101 null null 156.3821ms
+2025-06-16 01:02:27.113 +05:30 [DBG] Connection id "0HNDC8DDGUUIN" stopped.
+2025-06-16 01:02:27.162 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:27.162 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:27.163 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:27.163 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.163 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.164 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.164 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.164 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.164 +05:30 [DBG] New connection zjLjKWcGc7ylnSymp8Fblw created.
+2025-06-16 01:02:27.165 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:27.165 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.165 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:27.165 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.3377ms
+2025-06-16 01:02:27.180 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" accepted.
+2025-06-16 01:02:27.180 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" started.
+2025-06-16 01:02:27.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=nMkApwePQjWsJvipxuGuCQ - null null
+2025-06-16 01:02:27.181 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:27.181 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:27.181 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:27.181 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.182 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.182 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.182 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:27.182 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:27.182 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:27.182 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:27.183 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:27.183 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:27.321 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" received FIN.
+2025-06-16 01:02:27.321 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:27.322 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:27.322 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:27.322 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" disconnecting.
+2025-06-16 01:02:27.322 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:27.323 +05:30 [DBG] Removing connection nMkApwePQjWsJvipxuGuCQ from the list of connections.
+2025-06-16 01:02:27.323 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:27.323 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=nMkApwePQjWsJvipxuGuCQ - 101 null null 142.0026ms
+2025-06-16 01:02:27.323 +05:30 [DBG] Connection id "0HNDC8DDGUUIO" stopped.
+2025-06-16 01:02:27.362 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:27.363 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:27.363 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:27.363 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.363 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.363 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.364 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.364 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.365 +05:30 [DBG] New connection kvc4loLf78lS2uVf2mwigg created.
+2025-06-16 01:02:27.365 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:27.365 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.365 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:27.366 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.2989ms
+2025-06-16 01:02:27.370 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" accepted.
+2025-06-16 01:02:27.370 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" started.
+2025-06-16 01:02:27.370 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=483698XHTMDKhjGgIj5cyg - null null
+2025-06-16 01:02:27.371 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:27.371 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:27.371 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:27.371 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.371 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.371 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.371 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:27.371 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:27.372 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:27.372 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:27.373 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:27.373 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:27.524 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" received FIN.
+2025-06-16 01:02:27.524 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:27.524 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:27.524 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:27.524 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" disconnecting.
+2025-06-16 01:02:27.524 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:27.524 +05:30 [DBG] Removing connection 483698XHTMDKhjGgIj5cyg from the list of connections.
+2025-06-16 01:02:27.525 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:27.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=483698XHTMDKhjGgIj5cyg - 101 null null 154.4615ms
+2025-06-16 01:02:27.525 +05:30 [DBG] Connection id "0HNDC8DDGUUIP" stopped.
+2025-06-16 01:02:27.565 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:27.566 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:27.566 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:27.566 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.566 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.567 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.567 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.567 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.567 +05:30 [DBG] New connection B50E-IyPUqzB-D7F6kiw1A created.
+2025-06-16 01:02:27.568 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:27.568 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.568 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:27.569 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.3647ms
+2025-06-16 01:02:27.574 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" accepted.
+2025-06-16 01:02:27.574 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" started.
+2025-06-16 01:02:27.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=UyRyzWE1ah3ewiA7EYpjFg - null null
+2025-06-16 01:02:27.575 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:27.575 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:27.575 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:27.575 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.575 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.576 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.576 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:27.576 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:27.576 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:27.576 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:27.578 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:27.578 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:27.732 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" received FIN.
+2025-06-16 01:02:27.732 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:27.732 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:27.732 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:27.732 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" disconnecting.
+2025-06-16 01:02:27.732 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:27.732 +05:30 [DBG] Removing connection UyRyzWE1ah3ewiA7EYpjFg from the list of connections.
+2025-06-16 01:02:27.733 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:27.733 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=UyRyzWE1ah3ewiA7EYpjFg - 101 null null 158.0514ms
+2025-06-16 01:02:27.733 +05:30 [DBG] Connection id "0HNDC8DDGUUIQ" stopped.
+2025-06-16 01:02:27.770 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:27.770 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:27.770 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:27.770 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.771 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.771 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.771 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.771 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.771 +05:30 [DBG] New connection BomRM4syauJiuF1jl-J5tw created.
+2025-06-16 01:02:27.771 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:27.772 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.772 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:27.772 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.8871ms
+2025-06-16 01:02:27.775 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" accepted.
+2025-06-16 01:02:27.775 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" started.
+2025-06-16 01:02:27.776 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=SzruBu1jLeLFUIjDtbviSA - null null
+2025-06-16 01:02:27.777 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:27.777 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:27.777 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:27.778 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.778 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.778 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.778 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:27.778 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:27.778 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:27.779 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:27.780 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:27.780 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:27.934 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" received FIN.
+2025-06-16 01:02:27.934 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:27.934 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:27.935 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:27.935 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" disconnecting.
+2025-06-16 01:02:27.935 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:27.935 +05:30 [DBG] Removing connection SzruBu1jLeLFUIjDtbviSA from the list of connections.
+2025-06-16 01:02:27.935 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:27.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=SzruBu1jLeLFUIjDtbviSA - 101 null null 159.3224ms
+2025-06-16 01:02:27.936 +05:30 [DBG] Connection id "0HNDC8DDGUUIR" stopped.
+2025-06-16 01:02:27.973 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:27.973 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:27.974 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:27.974 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.974 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.974 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.974 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.974 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.975 +05:30 [DBG] New connection rIsjG7A0MwD40oI4PSoqWA created.
+2025-06-16 01:02:27.975 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:27.975 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:27.975 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:27.976 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.8305ms
+2025-06-16 01:02:27.980 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" accepted.
+2025-06-16 01:02:27.981 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" started.
+2025-06-16 01:02:27.981 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=fEuSZNEli2adjbUCRHnuhw - null null
+2025-06-16 01:02:27.981 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:27.981 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:27.982 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:27.982 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:27.982 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:27.982 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:27.982 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:27.982 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:27.982 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:27.982 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:27.983 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:27.984 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:28.140 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" received FIN.
+2025-06-16 01:02:28.140 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:28.140 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:28.140 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:28.141 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" disconnecting.
+2025-06-16 01:02:28.141 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:28.141 +05:30 [DBG] Removing connection fEuSZNEli2adjbUCRHnuhw from the list of connections.
+2025-06-16 01:02:28.141 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:28.141 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=fEuSZNEli2adjbUCRHnuhw - 101 null null 160.1196ms
+2025-06-16 01:02:28.141 +05:30 [DBG] Connection id "0HNDC8DDGUUIS" stopped.
+2025-06-16 01:02:28.179 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:28.179 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:28.180 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:28.180 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.181 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.181 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.181 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.181 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.181 +05:30 [DBG] New connection 0nlbAY9ezCkk5OloEplcIw created.
+2025-06-16 01:02:28.182 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:28.182 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.182 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:28.182 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.1169ms
+2025-06-16 01:02:28.186 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" accepted.
+2025-06-16 01:02:28.186 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" started.
+2025-06-16 01:02:28.186 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=YoOO0NF8hF11idwpFxyVRA - null null
+2025-06-16 01:02:28.186 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:28.187 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:28.187 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:28.187 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.187 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.187 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.187 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:28.187 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:28.188 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:28.188 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:28.189 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:28.189 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:28.345 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" received FIN.
+2025-06-16 01:02:28.345 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:28.345 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:28.345 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:28.346 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" disconnecting.
+2025-06-16 01:02:28.346 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:28.346 +05:30 [DBG] Removing connection YoOO0NF8hF11idwpFxyVRA from the list of connections.
+2025-06-16 01:02:28.346 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:28.346 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=YoOO0NF8hF11idwpFxyVRA - 101 null null 160.0134ms
+2025-06-16 01:02:28.347 +05:30 [DBG] Connection id "0HNDC8DDGUUIT" stopped.
+2025-06-16 01:02:28.384 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:28.384 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:28.384 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:28.384 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.385 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.385 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.385 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.385 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.386 +05:30 [DBG] New connection PZFj1dKVCJ_vTcrSXMixQg created.
+2025-06-16 01:02:28.386 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:28.386 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.386 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:28.387 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.8074ms
+2025-06-16 01:02:28.390 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" accepted.
+2025-06-16 01:02:28.390 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" started.
+2025-06-16 01:02:28.391 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=isD0JahTbCWhh8ro_X1-QQ - null null
+2025-06-16 01:02:28.391 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:28.391 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:28.391 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:28.392 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.392 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.392 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.392 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:28.392 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:28.392 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:28.392 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:28.394 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:28.394 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:28.550 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" received FIN.
+2025-06-16 01:02:28.551 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:28.550 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:28.551 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:28.551 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" disconnecting.
+2025-06-16 01:02:28.551 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:28.551 +05:30 [DBG] Removing connection isD0JahTbCWhh8ro_X1-QQ from the list of connections.
+2025-06-16 01:02:28.551 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:28.552 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=isD0JahTbCWhh8ro_X1-QQ - 101 null null 160.9109ms
+2025-06-16 01:02:28.552 +05:30 [DBG] Connection id "0HNDC8DDGUUIU" stopped.
+2025-06-16 01:02:28.589 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:28.589 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:28.590 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:28.590 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.590 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.590 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.590 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.591 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.591 +05:30 [DBG] New connection jElbUD143SkVY7ei1FqenA created.
+2025-06-16 01:02:28.591 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:28.591 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.591 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:28.591 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.1967ms
+2025-06-16 01:02:28.595 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" accepted.
+2025-06-16 01:02:28.595 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" started.
+2025-06-16 01:02:28.596 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=2t2WKoSCkDZlyQ-ct_wWxA - null null
+2025-06-16 01:02:28.596 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:28.596 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:28.596 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:28.597 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.597 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.597 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.597 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:28.597 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:28.597 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:28.597 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:28.599 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:28.599 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:28.752 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" received FIN.
+2025-06-16 01:02:28.752 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:28.752 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:28.752 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:28.753 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" disconnecting.
+2025-06-16 01:02:28.753 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:28.753 +05:30 [DBG] Removing connection 2t2WKoSCkDZlyQ-ct_wWxA from the list of connections.
+2025-06-16 01:02:28.753 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:28.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=2t2WKoSCkDZlyQ-ct_wWxA - 101 null null 157.9602ms
+2025-06-16 01:02:28.754 +05:30 [DBG] Connection id "0HNDC8DDGUUIV" stopped.
+2025-06-16 01:02:28.791 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:28.792 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:28.792 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:28.792 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.792 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.792 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.792 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.793 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.793 +05:30 [DBG] New connection 7VPvXd4LxAjW10AFTPngeQ created.
+2025-06-16 01:02:28.793 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:28.794 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:28.794 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:28.794 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.9151ms
+2025-06-16 01:02:28.798 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" accepted.
+2025-06-16 01:02:28.799 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" started.
+2025-06-16 01:02:28.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=vDGCu8CmBX0XlCnou8C7kQ - null null
+2025-06-16 01:02:28.799 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:28.799 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:28.800 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:28.800 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:28.800 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:28.800 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:28.800 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:28.800 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:28.800 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:28.800 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:28.802 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:28.802 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:28.958 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" received FIN.
+2025-06-16 01:02:28.958 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:28.958 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:28.958 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:28.958 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" disconnecting.
+2025-06-16 01:02:28.958 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:28.958 +05:30 [DBG] Removing connection vDGCu8CmBX0XlCnou8C7kQ from the list of connections.
+2025-06-16 01:02:28.959 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:28.959 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=vDGCu8CmBX0XlCnou8C7kQ - 101 null null 159.622ms
+2025-06-16 01:02:28.959 +05:30 [DBG] Connection id "0HNDC8DDGUUJ0" stopped.
+2025-06-16 01:02:28.998 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:28.999 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:28.999 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:28.999 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.000 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.000 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.000 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.000 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.001 +05:30 [DBG] New connection ihIFMbMKlwKkbzBDrVeu4Q created.
+2025-06-16 01:02:29.001 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:29.001 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.001 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:29.001 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.0578ms
+2025-06-16 01:02:29.006 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" accepted.
+2025-06-16 01:02:29.006 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" started.
+2025-06-16 01:02:29.007 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=s7d-PdoyP7fXE8HpEBi1Ag - null null
+2025-06-16 01:02:29.007 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:29.007 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:29.007 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:29.007 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.008 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.008 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.008 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:29.008 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:29.008 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:29.008 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:29.009 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:29.009 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:29.163 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" received FIN.
+2025-06-16 01:02:29.163 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:29.163 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:29.163 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:29.164 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" disconnecting.
+2025-06-16 01:02:29.164 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:29.164 +05:30 [DBG] Removing connection s7d-PdoyP7fXE8HpEBi1Ag from the list of connections.
+2025-06-16 01:02:29.164 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:29.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=s7d-PdoyP7fXE8HpEBi1Ag - 101 null null 157.4736ms
+2025-06-16 01:02:29.164 +05:30 [DBG] Connection id "0HNDC8DDGUUJ1" stopped.
+2025-06-16 01:02:29.202 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:29.202 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:29.202 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:29.202 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.202 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.202 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.203 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.203 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.203 +05:30 [DBG] New connection 5NwUqD_Fm4C17tWjmY-s-A created.
+2025-06-16 01:02:29.203 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:29.203 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.204 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:29.204 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9794ms
+2025-06-16 01:02:29.207 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" accepted.
+2025-06-16 01:02:29.207 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" started.
+2025-06-16 01:02:29.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=97TJymZQfIVS2Kd4wLQ__A - null null
+2025-06-16 01:02:29.208 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:29.208 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:29.208 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:29.208 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.208 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.208 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.208 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:29.208 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:29.208 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:29.209 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:29.210 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:29.210 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:29.369 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" received FIN.
+2025-06-16 01:02:29.369 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:29.370 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:29.370 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:29.370 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" disconnecting.
+2025-06-16 01:02:29.370 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:29.370 +05:30 [DBG] Removing connection 97TJymZQfIVS2Kd4wLQ__A from the list of connections.
+2025-06-16 01:02:29.370 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:29.370 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=97TJymZQfIVS2Kd4wLQ__A - 101 null null 163.0786ms
+2025-06-16 01:02:29.371 +05:30 [DBG] Connection id "0HNDC8DDGUUJ2" stopped.
+2025-06-16 01:02:29.408 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:29.408 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:29.408 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:29.408 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.408 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.409 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.409 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.409 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.409 +05:30 [DBG] New connection Gn4PTwG3p_7WFQfWa6QNXQ created.
+2025-06-16 01:02:29.409 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:29.410 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.410 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:29.410 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.2731ms
+2025-06-16 01:02:29.414 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" accepted.
+2025-06-16 01:02:29.415 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" started.
+2025-06-16 01:02:29.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=C65JaBrQLZDIfrFdudHoQw - null null
+2025-06-16 01:02:29.416 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:29.416 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:29.416 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:29.416 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.416 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.417 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.417 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:29.417 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:29.417 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:29.417 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:29.418 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:29.419 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:29.569 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" received FIN.
+2025-06-16 01:02:29.570 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:29.570 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:29.570 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:29.570 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" disconnecting.
+2025-06-16 01:02:29.570 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:29.570 +05:30 [DBG] Removing connection C65JaBrQLZDIfrFdudHoQw from the list of connections.
+2025-06-16 01:02:29.570 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:29.570 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=C65JaBrQLZDIfrFdudHoQw - 101 null null 154.5986ms
+2025-06-16 01:02:29.571 +05:30 [DBG] Connection id "0HNDC8DDGUUJ3" stopped.
+2025-06-16 01:02:29.611 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:29.611 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:29.611 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:29.611 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.611 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.611 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.612 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.612 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.612 +05:30 [DBG] New connection q2ygg5k96cndPUy5xeVeQg created.
+2025-06-16 01:02:29.612 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:29.612 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.612 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:29.613 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9119ms
+2025-06-16 01:02:29.617 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" accepted.
+2025-06-16 01:02:29.617 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" started.
+2025-06-16 01:02:29.618 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=vAA8ln5M9W1fOGEfRD6Njg - null null
+2025-06-16 01:02:29.618 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:29.619 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:29.619 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:29.619 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.619 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.619 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.620 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:29.620 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:29.620 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:29.620 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:29.621 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:29.622 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:29.775 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" received FIN.
+2025-06-16 01:02:29.775 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:29.775 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:29.775 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:29.776 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" disconnecting.
+2025-06-16 01:02:29.776 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:29.776 +05:30 [DBG] Removing connection vAA8ln5M9W1fOGEfRD6Njg from the list of connections.
+2025-06-16 01:02:29.776 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:29.776 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=vAA8ln5M9W1fOGEfRD6Njg - 101 null null 158.0962ms
+2025-06-16 01:02:29.776 +05:30 [DBG] Connection id "0HNDC8DDGUUJ4" stopped.
+2025-06-16 01:02:29.813 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:29.813 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:29.813 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:29.813 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.814 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.814 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.814 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.814 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.814 +05:30 [DBG] New connection TYrM2AUH5umMH-SUsMGp9w created.
+2025-06-16 01:02:29.815 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:29.815 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:29.815 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:29.815 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.3282ms
+2025-06-16 01:02:29.818 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" accepted.
+2025-06-16 01:02:29.818 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" started.
+2025-06-16 01:02:29.818 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=dGPPAR5NDYYuqUm7oG24lA - null null
+2025-06-16 01:02:29.819 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:29.819 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:29.819 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:29.819 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:29.819 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:29.819 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:29.819 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:29.819 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:29.820 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:29.820 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:29.821 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:29.821 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:29.980 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" received FIN.
+2025-06-16 01:02:29.980 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:29.980 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:29.980 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:29.980 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" disconnecting.
+2025-06-16 01:02:29.981 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:29.981 +05:30 [DBG] Removing connection dGPPAR5NDYYuqUm7oG24lA from the list of connections.
+2025-06-16 01:02:29.981 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:29.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=dGPPAR5NDYYuqUm7oG24lA - 101 null null 162.3834ms
+2025-06-16 01:02:29.981 +05:30 [DBG] Connection id "0HNDC8DDGUUJ5" stopped.
+2025-06-16 01:02:30.022 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.022 +05:30 [DBG] OPTIONS requests are not supported
+2025-06-16 01:02:30.023 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.023 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.023 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.023 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.023 +05:30 [DBG] The request is a preflight request.
+2025-06-16 01:02:30.024 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.024 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 204 null null 1.6768ms
+2025-06-16 01:02:30.026 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.026 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:30.026 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.027 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.027 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.027 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.027 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.028 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.028 +05:30 [DBG] New connection El0xhLBouIpdzydbid5jsA created.
+2025-06-16 01:02:30.028 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:30.028 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.028 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.028 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.5783ms
+2025-06-16 01:02:30.032 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" accepted.
+2025-06-16 01:02:30.032 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" started.
+2025-06-16 01:02:30.032 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=qKAExuX_zQHxw_F-GPunuQ - null null
+2025-06-16 01:02:30.033 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:30.033 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:30.033 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:30.033 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.033 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.033 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.033 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:30.033 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:30.034 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:30.034 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:30.035 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:30.035 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:30.185 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" received FIN.
+2025-06-16 01:02:30.185 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:30.185 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:30.185 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:30.185 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" disconnecting.
+2025-06-16 01:02:30.185 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:30.185 +05:30 [DBG] Removing connection qKAExuX_zQHxw_F-GPunuQ from the list of connections.
+2025-06-16 01:02:30.186 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:30.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=qKAExuX_zQHxw_F-GPunuQ - 101 null null 153.6326ms
+2025-06-16 01:02:30.186 +05:30 [DBG] Connection id "0HNDC8DDGUUJ6" stopped.
+2025-06-16 01:02:30.225 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.225 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:30.226 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.226 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.226 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.226 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.226 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.226 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.226 +05:30 [DBG] New connection oWCNUF-fS1fR4dZjN3cEqA created.
+2025-06-16 01:02:30.227 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:30.227 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.227 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.227 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.8574ms
+2025-06-16 01:02:30.231 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" accepted.
+2025-06-16 01:02:30.232 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" started.
+2025-06-16 01:02:30.232 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=BEEN6LZGbw-mTL3miGUraw - null null
+2025-06-16 01:02:30.233 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:30.233 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:30.233 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:30.233 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.233 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.233 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.233 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:30.233 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:30.233 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:30.233 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:30.235 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:30.235 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:30.388 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" received FIN.
+2025-06-16 01:02:30.388 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:30.388 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:30.388 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:30.388 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" disconnecting.
+2025-06-16 01:02:30.389 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:30.389 +05:30 [DBG] Removing connection BEEN6LZGbw-mTL3miGUraw from the list of connections.
+2025-06-16 01:02:30.389 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:30.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=BEEN6LZGbw-mTL3miGUraw - 101 null null 156.5957ms
+2025-06-16 01:02:30.389 +05:30 [DBG] Connection id "0HNDC8DDGUUJ7" stopped.
+2025-06-16 01:02:30.427 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.427 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:30.428 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.428 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.428 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.428 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.428 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.429 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.429 +05:30 [DBG] New connection nKA5VjEd8fWRDoHjTvRG8w created.
+2025-06-16 01:02:30.429 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:30.429 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.429 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.429 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.4847ms
+2025-06-16 01:02:30.433 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" accepted.
+2025-06-16 01:02:30.433 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" started.
+2025-06-16 01:02:30.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=m-Gr63YlfIrt9oPclyr-LQ - null null
+2025-06-16 01:02:30.433 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:30.433 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:30.434 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:30.434 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.434 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.434 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.434 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:30.434 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:30.434 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:30.434 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:30.436 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:30.436 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:30.590 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" received FIN.
+2025-06-16 01:02:30.590 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:30.590 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:30.590 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:30.591 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" disconnecting.
+2025-06-16 01:02:30.591 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:30.591 +05:30 [DBG] Removing connection m-Gr63YlfIrt9oPclyr-LQ from the list of connections.
+2025-06-16 01:02:30.591 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:30.591 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=m-Gr63YlfIrt9oPclyr-LQ - 101 null null 158.4111ms
+2025-06-16 01:02:30.592 +05:30 [DBG] Connection id "0HNDC8DDGUUJ8" stopped.
+2025-06-16 01:02:30.633 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.633 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:30.633 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.633 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.633 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.633 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.634 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.634 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.634 +05:30 [DBG] New connection IHRaEzyOAyt45j6hsinN2w created.
+2025-06-16 01:02:30.634 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:30.634 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.634 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.635 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.818ms
+2025-06-16 01:02:30.638 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" accepted.
+2025-06-16 01:02:30.638 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" started.
+2025-06-16 01:02:30.638 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=hNOkMZkQ9xsLTZN3IsUGfQ - null null
+2025-06-16 01:02:30.639 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:30.639 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:30.639 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:30.640 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.640 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.640 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.640 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:30.640 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:30.640 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:30.640 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:30.641 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:30.642 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:30.798 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" received FIN.
+2025-06-16 01:02:30.798 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:30.798 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:30.798 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:30.798 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" disconnecting.
+2025-06-16 01:02:30.799 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:30.799 +05:30 [DBG] Removing connection hNOkMZkQ9xsLTZN3IsUGfQ from the list of connections.
+2025-06-16 01:02:30.799 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:30.799 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=hNOkMZkQ9xsLTZN3IsUGfQ - 101 null null 160.9028ms
+2025-06-16 01:02:30.799 +05:30 [DBG] Connection id "0HNDC8DDGUUJ9" stopped.
+2025-06-16 01:02:30.840 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:30.840 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:30.840 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:30.840 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.841 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.841 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.841 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.841 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.841 +05:30 [DBG] New connection KKnxQA09JSJUBK-DOOmchA created.
+2025-06-16 01:02:30.841 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:30.842 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:30.842 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:30.842 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.4279ms
+2025-06-16 01:02:30.847 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" accepted.
+2025-06-16 01:02:30.847 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" started.
+2025-06-16 01:02:30.847 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=AZgInJ96t0UjQqnsmCJ5zg - null null
+2025-06-16 01:02:30.847 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:30.848 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:30.848 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:30.848 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:30.848 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:30.848 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:30.848 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:30.848 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:30.848 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:30.848 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:30.849 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:30.850 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:31.003 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" received FIN.
+2025-06-16 01:02:31.003 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:31.003 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:31.003 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:31.003 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" disconnecting.
+2025-06-16 01:02:31.003 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:31.004 +05:30 [DBG] Removing connection AZgInJ96t0UjQqnsmCJ5zg from the list of connections.
+2025-06-16 01:02:31.004 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:31.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=AZgInJ96t0UjQqnsmCJ5zg - 101 null null 156.632ms
+2025-06-16 01:02:31.004 +05:30 [DBG] Connection id "0HNDC8DDGUUJA" stopped.
+2025-06-16 01:02:31.044 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:31.044 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:31.044 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:31.045 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.045 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.045 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.045 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.045 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.046 +05:30 [DBG] New connection gQlC7vesnaghPlbAT9l1Tg created.
+2025-06-16 01:02:31.046 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:31.046 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.046 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:31.047 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.0709ms
+2025-06-16 01:02:31.053 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" accepted.
+2025-06-16 01:02:31.053 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" started.
+2025-06-16 01:02:31.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=c2ilL5kLuuv__25RITE34A - null null
+2025-06-16 01:02:31.054 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:31.054 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:31.054 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:31.054 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.054 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.054 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.054 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:31.054 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:31.054 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:31.055 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:31.056 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:31.056 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:31.209 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" received FIN.
+2025-06-16 01:02:31.209 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:31.209 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:31.209 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:31.210 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" disconnecting.
+2025-06-16 01:02:31.210 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:31.210 +05:30 [DBG] Removing connection c2ilL5kLuuv__25RITE34A from the list of connections.
+2025-06-16 01:02:31.210 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:31.210 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=c2ilL5kLuuv__25RITE34A - 101 null null 157.0968ms
+2025-06-16 01:02:31.211 +05:30 [DBG] Connection id "0HNDC8DDGUUJB" stopped.
+2025-06-16 01:02:31.248 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:31.248 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:31.249 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:31.249 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.249 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.249 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.249 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.250 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.250 +05:30 [DBG] New connection 75eC84Yd8dy3IRluJiyycQ created.
+2025-06-16 01:02:31.250 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:31.250 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.250 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:31.250 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.247ms
+2025-06-16 01:02:31.254 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" accepted.
+2025-06-16 01:02:31.254 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" started.
+2025-06-16 01:02:31.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=yeLqdtTxRcLZib0Q6ZN82A - null null
+2025-06-16 01:02:31.254 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:31.254 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:31.255 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:31.255 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.255 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.255 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.255 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:31.255 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:31.255 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:31.255 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:31.257 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:31.257 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:31.411 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" received FIN.
+2025-06-16 01:02:31.411 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:31.411 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:31.411 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:31.411 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" disconnecting.
+2025-06-16 01:02:31.411 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:31.411 +05:30 [DBG] Removing connection yeLqdtTxRcLZib0Q6ZN82A from the list of connections.
+2025-06-16 01:02:31.411 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:31.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=yeLqdtTxRcLZib0Q6ZN82A - 101 null null 157.4612ms
+2025-06-16 01:02:31.412 +05:30 [DBG] Connection id "0HNDC8DDGUUJC" stopped.
+2025-06-16 01:02:31.459 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:31.459 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:31.460 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:31.460 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.460 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.460 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.460 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.460 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.461 +05:30 [DBG] New connection H3llsN_uOfhBl7MfwpFu0A created.
+2025-06-16 01:02:31.461 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:31.461 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.461 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:31.461 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.2479ms
+2025-06-16 01:02:31.465 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" accepted.
+2025-06-16 01:02:31.465 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" started.
+2025-06-16 01:02:31.465 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=OQqno8neZSANOeBZqOmwEA - null null
+2025-06-16 01:02:31.465 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:31.466 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:31.466 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:31.466 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.466 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.466 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.466 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:31.466 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:31.466 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:31.466 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:31.468 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:31.468 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:31.617 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" received FIN.
+2025-06-16 01:02:31.617 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:31.617 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:31.617 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:31.617 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" disconnecting.
+2025-06-16 01:02:31.617 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:31.617 +05:30 [DBG] Removing connection OQqno8neZSANOeBZqOmwEA from the list of connections.
+2025-06-16 01:02:31.618 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:31.618 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=OQqno8neZSANOeBZqOmwEA - 101 null null 152.7598ms
+2025-06-16 01:02:31.618 +05:30 [DBG] Connection id "0HNDC8DDGUUJD" stopped.
+2025-06-16 01:02:31.656 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:31.656 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:31.656 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:31.656 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.656 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.657 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.657 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.657 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.657 +05:30 [DBG] New connection IQaanWVxblLnSSElJx-s6w created.
+2025-06-16 01:02:31.658 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:31.658 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.658 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:31.658 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.5232ms
+2025-06-16 01:02:31.663 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" accepted.
+2025-06-16 01:02:31.663 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" started.
+2025-06-16 01:02:31.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=5SRvDm8qcsgsPXb7z6OxKw - null null
+2025-06-16 01:02:31.663 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:31.664 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:31.664 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:31.664 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.664 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.664 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.664 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:31.664 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:31.664 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:31.664 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:31.666 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:31.666 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:31.820 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" received FIN.
+2025-06-16 01:02:31.820 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:31.820 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:31.820 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:31.821 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" disconnecting.
+2025-06-16 01:02:31.821 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:31.821 +05:30 [DBG] Removing connection 5SRvDm8qcsgsPXb7z6OxKw from the list of connections.
+2025-06-16 01:02:31.821 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:31.821 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=5SRvDm8qcsgsPXb7z6OxKw - 101 null null 157.9403ms
+2025-06-16 01:02:31.821 +05:30 [DBG] Connection id "0HNDC8DDGUUJE" stopped.
+2025-06-16 01:02:31.862 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:31.863 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:31.863 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:31.863 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.863 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.863 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.863 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.863 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.864 +05:30 [DBG] New connection fZF16-zczs3kvbHGGoWSZw created.
+2025-06-16 01:02:31.864 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:31.864 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:31.864 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:31.864 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9205ms
+2025-06-16 01:02:31.869 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" accepted.
+2025-06-16 01:02:31.869 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" started.
+2025-06-16 01:02:31.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=YGUjY95Khk55ktGjRjFU5A - null null
+2025-06-16 01:02:31.869 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:31.870 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:31.870 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:31.870 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:31.870 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:31.870 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:31.870 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:31.870 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:31.870 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:31.870 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:31.872 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:31.872 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:32.022 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" received FIN.
+2025-06-16 01:02:32.022 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:32.022 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:32.022 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:32.023 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" disconnecting.
+2025-06-16 01:02:32.023 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:32.023 +05:30 [DBG] Removing connection YGUjY95Khk55ktGjRjFU5A from the list of connections.
+2025-06-16 01:02:32.023 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:32.023 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=YGUjY95Khk55ktGjRjFU5A - 101 null null 154.062ms
+2025-06-16 01:02:32.023 +05:30 [DBG] Connection id "0HNDC8DDGUUJF" stopped.
+2025-06-16 01:02:32.059 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:32.060 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:32.061 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:32.061 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.062 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.062 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.062 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.062 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.062 +05:30 [DBG] New connection y3M7b7TSRP9GQFiPNjjdnw created.
+2025-06-16 01:02:32.063 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:32.063 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.063 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:32.063 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 3.5544ms
+2025-06-16 01:02:32.068 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" accepted.
+2025-06-16 01:02:32.068 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" started.
+2025-06-16 01:02:32.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=lqPWkkEjeKUM1aJHfeyoXQ - null null
+2025-06-16 01:02:32.068 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:32.069 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:32.069 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:32.069 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.069 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.069 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.069 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:32.069 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:32.070 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:32.070 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:32.071 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:32.071 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:32.230 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" received FIN.
+2025-06-16 01:02:32.230 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:32.230 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:32.230 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:32.231 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" disconnecting.
+2025-06-16 01:02:32.231 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:32.231 +05:30 [DBG] Removing connection lqPWkkEjeKUM1aJHfeyoXQ from the list of connections.
+2025-06-16 01:02:32.231 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:32.231 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=lqPWkkEjeKUM1aJHfeyoXQ - 101 null null 162.8895ms
+2025-06-16 01:02:32.231 +05:30 [DBG] Connection id "0HNDC8DDGUUJG" stopped.
+2025-06-16 01:02:32.271 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:32.271 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:32.272 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:32.272 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.272 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.272 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.272 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.272 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.273 +05:30 [DBG] New connection yqETFRh1NVyXak2hXQ-FJw created.
+2025-06-16 01:02:32.273 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:32.273 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.273 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:32.274 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.7062ms
+2025-06-16 01:02:32.278 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" accepted.
+2025-06-16 01:02:32.279 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" started.
+2025-06-16 01:02:32.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=RMgtzeotRhbnGL33d4HY2w - null null
+2025-06-16 01:02:32.279 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:32.279 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:32.279 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:32.279 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.279 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.279 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.279 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:32.280 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:32.280 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:32.280 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:32.281 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:32.282 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:32.432 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" received FIN.
+2025-06-16 01:02:32.432 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:32.433 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:32.433 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:32.433 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" disconnecting.
+2025-06-16 01:02:32.433 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:32.433 +05:30 [DBG] Removing connection RMgtzeotRhbnGL33d4HY2w from the list of connections.
+2025-06-16 01:02:32.433 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:32.433 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=RMgtzeotRhbnGL33d4HY2w - 101 null null 154.5801ms
+2025-06-16 01:02:32.434 +05:30 [DBG] Connection id "0HNDC8DDGUUJH" stopped.
+2025-06-16 01:02:32.470 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:32.471 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:32.471 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:32.471 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.471 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.471 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.471 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.472 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.472 +05:30 [DBG] New connection Zw2ZZj8MrQ15HdGIr6uq1Q created.
+2025-06-16 01:02:32.472 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:32.472 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.472 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:32.473 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.1079ms
+2025-06-16 01:02:32.478 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" accepted.
+2025-06-16 01:02:32.478 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" started.
+2025-06-16 01:02:32.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=RF4JnpTVVi4omcwWv6YIlg - null null
+2025-06-16 01:02:32.478 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:32.479 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:32.479 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:32.479 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.479 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.479 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.479 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:32.479 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:32.479 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:32.479 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:32.481 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:32.481 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:32.635 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" received FIN.
+2025-06-16 01:02:32.635 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:32.635 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:32.635 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:32.635 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" disconnecting.
+2025-06-16 01:02:32.635 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:32.635 +05:30 [DBG] Removing connection RF4JnpTVVi4omcwWv6YIlg from the list of connections.
+2025-06-16 01:02:32.635 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:32.636 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=RF4JnpTVVi4omcwWv6YIlg - 101 null null 157.37ms
+2025-06-16 01:02:32.636 +05:30 [DBG] Connection id "0HNDC8DDGUUJI" stopped.
+2025-06-16 01:02:32.684 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:32.684 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:32.684 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:32.684 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.684 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.685 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.685 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.685 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.685 +05:30 [DBG] New connection FxYl2PwSMmVIBA_vcaDNMQ created.
+2025-06-16 01:02:32.685 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:32.685 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.686 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:32.686 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.8841ms
+2025-06-16 01:02:32.690 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" accepted.
+2025-06-16 01:02:32.690 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" started.
+2025-06-16 01:02:32.690 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=SFmheypMEIUU1bZ7_0fRsg - null null
+2025-06-16 01:02:32.691 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:32.691 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:32.691 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:32.691 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.691 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.691 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.691 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:32.691 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:32.692 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:32.692 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:32.693 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:32.693 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:32.840 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" received FIN.
+2025-06-16 01:02:32.840 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:32.840 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:32.840 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:32.840 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" disconnecting.
+2025-06-16 01:02:32.841 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:32.841 +05:30 [DBG] Removing connection SFmheypMEIUU1bZ7_0fRsg from the list of connections.
+2025-06-16 01:02:32.841 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:32.841 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=SFmheypMEIUU1bZ7_0fRsg - 101 null null 150.566ms
+2025-06-16 01:02:32.841 +05:30 [DBG] Connection id "0HNDC8DDGUUJJ" stopped.
+2025-06-16 01:02:32.879 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:32.879 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:32.879 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:32.879 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.880 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.880 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.880 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.880 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.880 +05:30 [DBG] New connection iAsAg-qA8nmXRHf7uHkjug created.
+2025-06-16 01:02:32.880 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:32.880 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:32.881 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:32.881 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.8973ms
+2025-06-16 01:02:32.884 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" accepted.
+2025-06-16 01:02:32.885 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" started.
+2025-06-16 01:02:32.885 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=7GSEGhvJu3FBsX1cJHNwww - null null
+2025-06-16 01:02:32.886 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:32.886 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:32.886 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:32.886 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:32.886 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:32.886 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:32.887 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:32.887 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:32.887 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:32.887 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:32.890 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:32.890 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:33.048 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" received FIN.
+2025-06-16 01:02:33.048 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:33.048 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:33.048 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:33.048 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" disconnecting.
+2025-06-16 01:02:33.048 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:33.048 +05:30 [DBG] Removing connection 7GSEGhvJu3FBsX1cJHNwww from the list of connections.
+2025-06-16 01:02:33.048 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:33.049 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=7GSEGhvJu3FBsX1cJHNwww - 101 null null 163.4562ms
+2025-06-16 01:02:33.049 +05:30 [DBG] Connection id "0HNDC8DDGUUJK" stopped.
+2025-06-16 01:02:33.090 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:33.090 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:33.091 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:33.091 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.091 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.091 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.091 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.091 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.091 +05:30 [DBG] New connection 0Uoc1sPoXNvq3em1RcMDgA created.
+2025-06-16 01:02:33.092 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:33.092 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.092 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:33.092 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9093ms
+2025-06-16 01:02:33.097 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" accepted.
+2025-06-16 01:02:33.097 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" started.
+2025-06-16 01:02:33.097 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=HsfNgBLrb6PY5TQEDw1WmA - null null
+2025-06-16 01:02:33.098 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:33.098 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:33.098 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:33.098 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.098 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.098 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.098 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:33.098 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:33.099 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:33.099 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:33.100 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:33.100 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:33.253 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" received FIN.
+2025-06-16 01:02:33.253 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:33.253 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:33.253 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:33.254 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" disconnecting.
+2025-06-16 01:02:33.254 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:33.254 +05:30 [DBG] Removing connection HsfNgBLrb6PY5TQEDw1WmA from the list of connections.
+2025-06-16 01:02:33.254 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:33.254 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=HsfNgBLrb6PY5TQEDw1WmA - 101 null null 156.6151ms
+2025-06-16 01:02:33.254 +05:30 [DBG] Connection id "0HNDC8DDGUUJL" stopped.
+2025-06-16 01:02:33.291 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:33.291 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:33.291 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:33.291 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.292 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.292 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.292 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.292 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.292 +05:30 [DBG] New connection UYolLcReYCSzwbesmJedsA created.
+2025-06-16 01:02:33.292 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:33.292 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.293 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:33.293 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.064ms
+2025-06-16 01:02:33.297 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" accepted.
+2025-06-16 01:02:33.297 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" started.
+2025-06-16 01:02:33.298 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=CV8_DQf6eEmPpQSyoTosmQ - null null
+2025-06-16 01:02:33.298 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:33.298 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:33.299 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:33.299 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.299 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.299 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.299 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:33.299 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:33.299 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:33.299 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:33.301 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:33.301 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:33.454 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" received FIN.
+2025-06-16 01:02:33.454 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:33.454 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:33.454 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:33.454 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" disconnecting.
+2025-06-16 01:02:33.454 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:33.454 +05:30 [DBG] Removing connection CV8_DQf6eEmPpQSyoTosmQ from the list of connections.
+2025-06-16 01:02:33.455 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:33.455 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=CV8_DQf6eEmPpQSyoTosmQ - 101 null null 156.588ms
+2025-06-16 01:02:33.455 +05:30 [DBG] Connection id "0HNDC8DDGUUJM" stopped.
+2025-06-16 01:02:33.492 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:33.493 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:33.493 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:33.493 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.493 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.493 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.494 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.494 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.494 +05:30 [DBG] New connection kQmt4Brgo2oHKw7JvTED9g created.
+2025-06-16 01:02:33.494 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:33.494 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.494 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:33.495 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.2243ms
+2025-06-16 01:02:33.500 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" accepted.
+2025-06-16 01:02:33.500 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" started.
+2025-06-16 01:02:33.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=oHgawGWuCgtHJZIr1yIf3g - null null
+2025-06-16 01:02:33.501 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:33.501 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:33.501 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:33.501 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.501 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.501 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.501 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:33.501 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:33.501 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:33.501 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:33.503 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:33.503 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:33.662 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" received FIN.
+2025-06-16 01:02:33.662 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:33.662 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:33.662 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:33.662 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" disconnecting.
+2025-06-16 01:02:33.662 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:33.662 +05:30 [DBG] Removing connection oHgawGWuCgtHJZIr1yIf3g from the list of connections.
+2025-06-16 01:02:33.662 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:33.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=oHgawGWuCgtHJZIr1yIf3g - 101 null null 162.287ms
+2025-06-16 01:02:33.663 +05:30 [DBG] Connection id "0HNDC8DDGUUJN" stopped.
+2025-06-16 01:02:33.707 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:33.708 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:33.708 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:33.708 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.708 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.708 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.709 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.709 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.709 +05:30 [DBG] New connection RQs6oE3FAaxnBF4KKGkfdw created.
+2025-06-16 01:02:33.709 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:33.710 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.710 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:33.710 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.6097ms
+2025-06-16 01:02:33.715 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" accepted.
+2025-06-16 01:02:33.716 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" started.
+2025-06-16 01:02:33.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=DWH9g8EAuCHV5T3EtbgraA - null null
+2025-06-16 01:02:33.716 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:33.716 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:33.716 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:33.716 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.716 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.717 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.717 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:33.717 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:33.717 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:33.717 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:33.718 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:33.718 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:33.872 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" received FIN.
+2025-06-16 01:02:33.872 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:33.872 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:33.872 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:33.872 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" disconnecting.
+2025-06-16 01:02:33.873 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:33.873 +05:30 [DBG] Removing connection DWH9g8EAuCHV5T3EtbgraA from the list of connections.
+2025-06-16 01:02:33.873 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:33.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=DWH9g8EAuCHV5T3EtbgraA - 101 null null 157.036ms
+2025-06-16 01:02:33.873 +05:30 [DBG] Connection id "0HNDC8DDGUUJO" stopped.
+2025-06-16 01:02:33.913 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:33.913 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:33.914 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:33.914 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.914 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.914 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.914 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.914 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.914 +05:30 [DBG] New connection GNgeetc1IM7oYUZFkxS5ZQ created.
+2025-06-16 01:02:33.914 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:33.914 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:33.915 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:33.915 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.5579ms
+2025-06-16 01:02:33.920 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" accepted.
+2025-06-16 01:02:33.920 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" started.
+2025-06-16 01:02:33.920 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=8r-QuqQdLvpZoU3iyEtg8A - null null
+2025-06-16 01:02:33.920 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:33.921 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:33.921 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:33.921 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:33.922 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:33.922 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:33.922 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:33.922 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:33.922 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:33.922 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:33.924 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:33.924 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:34.078 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" received FIN.
+2025-06-16 01:02:34.078 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:34.078 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:34.078 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" disconnecting.
+2025-06-16 01:02:34.078 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:34.078 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:34.078 +05:30 [DBG] Removing connection 8r-QuqQdLvpZoU3iyEtg8A from the list of connections.
+2025-06-16 01:02:34.078 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:34.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=8r-QuqQdLvpZoU3iyEtg8A - 101 null null 158.1786ms
+2025-06-16 01:02:34.079 +05:30 [DBG] Connection id "0HNDC8DDGUUJP" stopped.
+2025-06-16 01:02:34.123 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:34.123 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:34.124 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:34.124 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.124 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.124 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.124 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.124 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.124 +05:30 [DBG] New connection lULp4k0dGuD3e4YdbSjnSQ created.
+2025-06-16 01:02:34.124 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:34.125 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.125 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:34.125 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.7055ms
+2025-06-16 01:02:34.129 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" accepted.
+2025-06-16 01:02:34.129 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" started.
+2025-06-16 01:02:34.130 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=eder2bKDFcQQWTKO7UbMlA - null null
+2025-06-16 01:02:34.130 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:34.130 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:34.130 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:34.130 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.130 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.130 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.131 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:34.131 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:34.131 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:34.131 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:34.133 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:34.133 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:34.286 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" received FIN.
+2025-06-16 01:02:34.286 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:34.286 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:34.286 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:34.286 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" disconnecting.
+2025-06-16 01:02:34.287 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:34.287 +05:30 [DBG] Removing connection eder2bKDFcQQWTKO7UbMlA from the list of connections.
+2025-06-16 01:02:34.287 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:34.287 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=eder2bKDFcQQWTKO7UbMlA - 101 null null 157.2942ms
+2025-06-16 01:02:34.287 +05:30 [DBG] Connection id "0HNDC8DDGUUJQ" stopped.
+2025-06-16 01:02:34.329 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:34.330 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:34.330 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:34.330 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.330 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.330 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.330 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.330 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.331 +05:30 [DBG] New connection SSeVbmIKOXVKDRJTaXl1Rw created.
+2025-06-16 01:02:34.331 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:34.331 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.331 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:34.332 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.4412ms
+2025-06-16 01:02:34.335 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" accepted.
+2025-06-16 01:02:34.335 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" started.
+2025-06-16 01:02:34.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=YtyrsHkDi5Cyh-NrfCCEpw - null null
+2025-06-16 01:02:34.336 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:34.336 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:34.336 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:34.336 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.337 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.337 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.337 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:34.337 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:34.337 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:34.337 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:34.338 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:34.338 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:34.489 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" received FIN.
+2025-06-16 01:02:34.489 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:34.489 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:34.489 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:34.489 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" disconnecting.
+2025-06-16 01:02:34.490 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:34.490 +05:30 [DBG] Removing connection YtyrsHkDi5Cyh-NrfCCEpw from the list of connections.
+2025-06-16 01:02:34.490 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:34.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=YtyrsHkDi5Cyh-NrfCCEpw - 101 null null 154.1589ms
+2025-06-16 01:02:34.490 +05:30 [DBG] Connection id "0HNDC8DDGUUJR" stopped.
+2025-06-16 01:02:34.529 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:34.530 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:34.530 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:34.530 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.530 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.531 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.531 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.531 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.531 +05:30 [DBG] New connection edC_Aoiopk2MZygbvGOsYQ created.
+2025-06-16 01:02:34.531 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:34.532 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.532 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:34.532 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.4743ms
+2025-06-16 01:02:34.536 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" accepted.
+2025-06-16 01:02:34.536 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" started.
+2025-06-16 01:02:34.537 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=HzlRSz_gl8plnV5LLOkzZw - null null
+2025-06-16 01:02:34.537 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:34.537 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:34.537 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:34.538 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.538 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.538 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.538 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:34.538 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:34.538 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:34.538 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:34.539 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:34.540 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:34.693 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" received FIN.
+2025-06-16 01:02:34.694 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:34.694 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:34.694 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:34.694 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" disconnecting.
+2025-06-16 01:02:34.694 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:34.694 +05:30 [DBG] Removing connection HzlRSz_gl8plnV5LLOkzZw from the list of connections.
+2025-06-16 01:02:34.694 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:34.694 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=HzlRSz_gl8plnV5LLOkzZw - 101 null null 157.6342ms
+2025-06-16 01:02:34.695 +05:30 [DBG] Connection id "0HNDC8DDGUUJS" stopped.
+2025-06-16 01:02:34.733 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:34.733 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:34.734 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:34.734 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.734 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.734 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.735 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.735 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.735 +05:30 [DBG] New connection VkaqC0xbnv10NxPiSSIa5Q created.
+2025-06-16 01:02:34.735 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:34.735 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.735 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:34.735 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 2.7271ms
+2025-06-16 01:02:34.739 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" accepted.
+2025-06-16 01:02:34.739 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" started.
+2025-06-16 01:02:34.740 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=m0aFPS4leCGf3dZ9Biqxcw - null null
+2025-06-16 01:02:34.740 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:34.740 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:34.740 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:34.740 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.740 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.741 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.741 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:34.741 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:34.741 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:34.741 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:34.743 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:34.743 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:34.898 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" received FIN.
+2025-06-16 01:02:34.898 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:34.898 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:34.898 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:34.899 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" disconnecting.
+2025-06-16 01:02:34.899 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:34.899 +05:30 [DBG] Removing connection m0aFPS4leCGf3dZ9Biqxcw from the list of connections.
+2025-06-16 01:02:34.899 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:34.899 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=m0aFPS4leCGf3dZ9Biqxcw - 101 null null 159.3857ms
+2025-06-16 01:02:34.899 +05:30 [DBG] Connection id "0HNDC8DDGUUJT" stopped.
+2025-06-16 01:02:34.938 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 01:02:34.939 +05:30 [DBG] POST requests are not supported
+2025-06-16 01:02:34.939 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub/negotiate'
+2025-06-16 01:02:34.939 +05:30 [DBG] Request matched endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.939 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.939 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.939 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.939 +05:30 [INF] Executing endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.940 +05:30 [DBG] New connection 9b3DHXaPj6OXKNJDxPAqLg created.
+2025-06-16 01:02:34.940 +05:30 [DBG] Sending negotiation response.
+2025-06-16 01:02:34.940 +05:30 [INF] Executed endpoint '/orderHub/negotiate'
+2025-06-16 01:02:34.940 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" completed keep alive response.
+2025-06-16 01:02:34.940 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5263/orderHub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9734ms
+2025-06-16 01:02:34.944 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" accepted.
+2025-06-16 01:02:34.945 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" started.
+2025-06-16 01:02:34.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5263/orderHub?id=upmfzY5hHGwB0sxQ1z59LA - null null
+2025-06-16 01:02:34.946 +05:30 [DBG] The request path  does not match the path filter
+2025-06-16 01:02:34.946 +05:30 [DBG] 1 candidate(s) found for the request path '/orderHub'
+2025-06-16 01:02:34.946 +05:30 [DBG] Request matched endpoint '/orderHub'
+2025-06-16 01:02:34.946 +05:30 [DBG] The request has an origin header: 'http://127.0.0.1:5500'.
+2025-06-16 01:02:34.946 +05:30 [INF] CORS policy execution successful.
+2025-06-16 01:02:34.946 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-16 01:02:34.946 +05:30 [INF] Executing endpoint '/orderHub'
+2025-06-16 01:02:34.946 +05:30 [DBG] Establishing new connection.
+2025-06-16 01:02:34.946 +05:30 [DBG] OnConnectedAsync started.
+2025-06-16 01:02:34.946 +05:30 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-06-16 01:02:34.948 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-06-16 01:02:34.948 +05:30 [DBG] Completed connection handshake. Using HubProtocol 'json'.
+2025-06-16 01:02:35.104 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" received FIN.
+2025-06-16 01:02:35.104 +05:30 [DBG] OnConnectedAsync ending.
+2025-06-16 01:02:35.104 +05:30 [DBG] Waiting for the application to finish sending data.
+2025-06-16 01:02:35.104 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:35.104 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" disconnecting.
+2025-06-16 01:02:35.104 +05:30 [DBG] Socket closed.
+2025-06-16 01:02:35.105 +05:30 [DBG] Removing connection upmfzY5hHGwB0sxQ1z59LA from the list of connections.
+2025-06-16 01:02:35.105 +05:30 [INF] Executed endpoint '/orderHub'
+2025-06-16 01:02:35.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5263/orderHub?id=upmfzY5hHGwB0sxQ1z59LA - 101 null null 159.3883ms
+2025-06-16 01:02:35.105 +05:30 [DBG] Connection id "0HNDC8DDGUUJU" stopped.
+2025-06-16 01:02:35.120 +05:30 [INF] Application is shutting down...
+2025-06-16 01:02:35.121 +05:30 [DBG] Removing connection TREZ1YrLS4h8Yg43fFU6Ew from the list of connections.
+2025-06-16 01:02:35.121 +05:30 [DBG] Hosting stopping
+2025-06-16 01:02:35.129 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" disconnecting.
+2025-06-16 01:02:35.129 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" stopped.
+2025-06-16 01:02:35.129 +05:30 [DBG] Connection id "0HNDC8DDGUUIC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-16 01:02:35.133 +05:30 [DBG] Hosting stopped

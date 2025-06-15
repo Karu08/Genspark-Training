@@ -2,8 +2,8 @@ namespace OnlineGroceryPortal.Models
 {
     public class Order
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid CustomerId { get; set; }
+        public long Id { get; set; }
+        public long CustomerId { get; set; }
         public int DeliveryAgentId { get; set; }
         public DateTime OrderDate { get; set; }
         public string Status { get; set; } = null!; //cancelled, pending, ofd, delivered etc
@@ -15,8 +15,6 @@ namespace OnlineGroceryPortal.Models
 
         //audit
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public string? CreatedBy { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public string? UpdatedBy { get; set; }
+      
     }
 }

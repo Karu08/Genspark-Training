@@ -2,7 +2,7 @@ namespace OnlineGroceryPortal.Models.DTOs
 {
     public class ProductDto
     {
-        public Guid Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
         public string Type { get; set; } = string.Empty;

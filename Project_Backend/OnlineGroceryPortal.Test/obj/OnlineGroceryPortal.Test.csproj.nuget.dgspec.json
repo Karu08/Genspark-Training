@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj": {}
+    "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj": {}
   },
   "projects": {
-    "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj": {
+    "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj",
+        "projectUniqueName": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj",
         "projectName": "OnlineGroceryPortal.Test",
-        "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj",
+        "projectPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal.Test/OnlineGroceryPortal.Test.csproj",
         "packagesPath": "/Users/karunya/.nuget/packages/",
-        "outputPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal.Test/obj/",
+        "outputPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal.Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karunya/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
-                "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj"
+              "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
+                "projectPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
+    "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
+        "projectUniqueName": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
         "projectName": "OnlineGroceryPortal",
-        "projectPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
+        "projectPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/OnlineGroceryPortal.csproj",
         "packagesPath": "/Users/karunya/.nuget/packages/",
-        "outputPath": "/Users/karunya/Documents/Presidio-Genspark Training/Project_Backend/OnlineGroceryPortal/obj/",
+        "outputPath": "/Users/karunya/Documents/Genspark-Training/Project_Backend/OnlineGroceryPortal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karunya/.nuget/NuGet/NuGet.Config"
@@ -147,7 +147,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[9.0.6, )"
             },
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
