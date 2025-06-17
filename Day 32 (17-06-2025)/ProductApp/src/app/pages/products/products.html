@@ -1,0 +1,33 @@
+<div class="container">
+
+ <input
+  #searchBox
+  type="text"
+  placeholder="Search products..."
+  (input)="onSearch(searchBox.value)"
+/>
+
+
+
+  <div *ngIf="isLoading">Loading...</div>
+
+  <div *ngIf="noResults && !isLoading">No results found.</div>
+
+  <ng-container *ngIf="products.length > 0; else noData">
+    <div class="grid">
+      <div class="card" *ngFor="let product of products">
+        <img [src]="product?.thumbnail" alt="product" />
+        <h3>{{ product?.title }}</h3>
+        <p>{{ product?.description }}</p>
+        <p>₹{{ product?.price }}</p>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noData>
+    <p *ngIf="!isLoading">No products to display.</p>
+  </ng-template>
+
+ 
+  <button *ngIf="!isEndReached && !isLoading" (click)="loadMore()">Load More</button>
+</div>
