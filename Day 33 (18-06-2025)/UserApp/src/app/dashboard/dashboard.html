@@ -1,0 +1,32 @@
+<h2>User Dashboard</h2>
+
+
+<label>
+  Gender:
+  <select [(ngModel)]="genderFilter">
+    <option value="">All</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</label>
+
+<label>
+  State:
+  <input type="text" [(ngModel)]="stateFilter" placeholder="e.g. California" />
+</label>
+
+<button (click)="applyFilters()">Apply</button>
+<button (click)="resetFilters()">Reset</button>
+
+<hr>
+
+
+<div *ngFor="let user of filteredUsers; trackBy: trackByName">
+  <div class="card">
+    <p><strong>Name:</strong> {{ user.firstName }} {{ user.lastName }}</p>
+    <p><strong>Gender:</strong> {{ user.gender }}</p>
+    <p><strong>Role:</strong> {{ user.role }}</p>
+    <p><strong>State:</strong> {{ user.address?.state || 'Unknown' }}</p>
+  </div>
+</div> 
+
