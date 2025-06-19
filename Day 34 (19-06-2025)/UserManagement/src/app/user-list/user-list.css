@@ -1,0 +1,29 @@
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #1976d2;
+  color: white;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 8px;
+  margin: 0 auto 16px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h3 {
+    text-align: center;
+}

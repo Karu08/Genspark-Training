@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+hr {
+  width: 80%;
+  margin: 30px auto;
+  border: none;
+  border-top: 1px solid #ddd;
+}
