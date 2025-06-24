@@ -1,0 +1,34 @@
+<div class="center-box">
+  <h2>Registration</h2>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label>
+      Username:
+      <input type="text" formControlName="username">
+    </label>
+
+    <label>
+      Password:
+      <input type="password" formControlName="password">
+    </label>
+
+    <label>
+      Role:
+      <select formControlName="role">
+        <option value="">Select Role</option>
+        <option value="Admin">Admin</option>
+        <option value="Customer">Customer</option>
+        <option value="Delivery Agent">Delivery Agent</option>
+      </select>
+    </label>
+
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
+  </form>
+
+  <p *ngIf="successMsg" style="color:green">{{ successMsg }}</p>
+  <p *ngIf="errorMsg" style="color:red">{{ errorMsg }}</p>
+
+  <p class="register-link">
+    Already have an account? <a routerLink="/login">Login here</a>
+  </p>
+</div>

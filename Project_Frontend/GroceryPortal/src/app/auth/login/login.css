@@ -1,0 +1,78 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.center-box {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+p {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
