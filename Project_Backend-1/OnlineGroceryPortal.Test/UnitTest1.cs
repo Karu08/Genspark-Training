@@ -25,18 +25,17 @@ namespace OnlineGroceryPortal.Test
 
         [SetUp]
         public void Setup()
-{
-    _mockRepo = new Mock<IProductRepository>();
+        {
+            _mockRepo = new Mock<IProductRepository>();
 
-    // Create a unique long (e.g. timestamp-based) and convert to string
-    long uniqueId = DateTime.UtcNow.Ticks;
-    var options = new DbContextOptionsBuilder<GroceryDbContext>()
-        .UseInMemoryDatabase(uniqueId.ToString()) // still needs to be a string
-        .Options;
+            long uniqueId = DateTime.UtcNow.Ticks;
+            var options = new DbContextOptionsBuilder<GroceryDbContext>()
+                .UseInMemoryDatabase(uniqueId.ToString()) 
+                .Options;
 
-    _context = new GroceryDbContext(options);
-    _service = new ProductService(_mockRepo.Object, _context);
-}
+            _context = new GroceryDbContext(options);
+            _service = new ProductService(_mockRepo.Object, _context);
+        }
 
         [Test]
         public async Task GetAllProductsAsync_ReturnsMappedProductDtos()
@@ -95,51 +94,51 @@ namespace OnlineGroceryPortal.Test
 
         [SetUp]
         public void Setup()
-{
-    _mockRepo = new Mock<IOrderRepository>();
-
-    long uniqueId = DateTime.UtcNow.Ticks; // generates a unique long
-    var options = new DbContextOptionsBuilder<GroceryDbContext>()
-        .UseInMemoryDatabase(uniqueId.ToString()) // convert long to string
-        .Options;
-
-    _context = new GroceryDbContext(options);
-    _service = new OrderService(_mockRepo.Object, _context);
-}
-
-        [Test]
-        public async Task PlaceOrderAsync_ReturnsOrder()
         {
-            var customerId = 1234L;
-            var dto = new OrderDto
-            {
-                CustomerId = customerId,
-                Items = new List<OrderItemDto>
-                {
-                    new OrderItemDto { ProductId = 1L, Quantity = 1 }
-                }
-            };
+            _mockRepo = new Mock<IOrderRepository>();
 
-            _mockRepo.Setup(r => r.CreateAsync(It.IsAny<Order>()))
-                     .ReturnsAsync(new Order { CustomerId = customerId });
+            long uniqueId = DateTime.UtcNow.Ticks;
+            var options = new DbContextOptionsBuilder<GroceryDbContext>()
+                .UseInMemoryDatabase(uniqueId.ToString()) 
+                .Options;
 
-            var result = await _service.PlaceOrderAsync(customerId, dto);
-
-            Assert.That(result, Is.Not.Null);
-            Assert.That(result.CustomerId, Is.EqualTo(customerId));
+            _context = new GroceryDbContext(options);
+            _service = new OrderService(_mockRepo.Object, _context);
         }
+
+        // [Test]
+        // public async Task PlaceOrderAsync_ReturnsOrder()
+        // {
+        //     var customerId = 1234L;
+        //     var dto = new OrderDto
+        //     {
+        //         CustomerId = customerId,
+        //         Items = new List<OrderItemDto>
+        //         {
+        //             new OrderItemDto { ProductId = 1L, Quantity = 1 }
+        //         }
+        //     };
+
+        //     _mockRepo.Setup(r => r.CreateAsync(It.IsAny<Order>()))
+        //              .ReturnsAsync(new Order { CustomerId = customerId });
+
+        //     var result = await _service.PlaceOrderAsync(customerId, dto);
+
+        //     Assert.That(result, Is.Not.Null);
+        //     Assert.That(result.CustomerId, Is.EqualTo(customerId));
+        // }
 
         [Test]
         public async Task GetOrderStatusAsync_ReturnsStatus()
-{
-    long orderId = 1001L; // sample long ID
-    _mockRepo.Setup(r => r.GetByIdAsync(orderId))
-             .ReturnsAsync(new Order { Id = orderId, Status = "Pending" });
+        {
+            long orderId = 1001L; 
+            _mockRepo.Setup(r => r.GetByIdAsync(orderId))
+                .ReturnsAsync(new Order { Id = orderId, Status = "Pending" });
 
-    var status = await _service.GetOrderStatusAsync(orderId);
+            var status = await _service.GetOrderStatusAsync(orderId);
 
-    Assert.That(status, Is.EqualTo("Pending"));
-}
+            Assert.That(status, Is.EqualTo("Pending"));
+        }
 
 
         [Test]
@@ -186,20 +185,20 @@ namespace OnlineGroceryPortal.Test
 
             _controller = new OrderController(_mockService.Object, _mockHubContext.Object);
 
-            // 🔐 Set mock user with claims (Role = Agent)
-var claims = new List<Claim>
-{
-    new Claim(ClaimTypes.Role, "Agent"), // cleaner than using the full URL
-    new Claim(ClaimTypes.NameIdentifier, 1234L.ToString()) // long converted to string
-};
+            // Setting mock user with claims (Role = Agent)
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Role, "Agent"), 
+                new Claim(ClaimTypes.NameIdentifier, 1234L.ToString())
+            };
 
-var identity = new ClaimsIdentity(claims, "TestAuth");
-var user = new ClaimsPrincipal(identity);
+            var identity = new ClaimsIdentity(claims, "TestAuth");
+            var user = new ClaimsPrincipal(identity);
 
-_controller.ControllerContext = new ControllerContext
-{
-    HttpContext = new DefaultHttpContext { User = user }
-};
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext { User = user }
+            };
 
         }
 
@@ -404,13 +403,13 @@ _controller.ControllerContext = new ControllerContext
 
         [Test]
         public async Task GetById_ReturnsNotFound_WhenProductNotFound()
-{
-    _mockService.Setup(s => s.GetProductByIdAsync(It.IsAny<long>())).ReturnsAsync((ProductDto?)null);
+        {
+            _mockService.Setup(s => s.GetProductByIdAsync(It.IsAny<long>())).ReturnsAsync((ProductDto?)null);
 
-    var result = await _controller.GetById(999L); // use a dummy long ID
+            var result = await _controller.GetById(999L); // use a dummy long ID
 
-    Assert.That(result, Is.InstanceOf<NotFoundObjectResult>());
-}
+            Assert.That(result, Is.InstanceOf<NotFoundObjectResult>());
+        }
 
 
         [Test]

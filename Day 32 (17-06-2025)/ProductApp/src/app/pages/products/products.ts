@@ -26,7 +26,7 @@ export class Products implements OnInit {
 
   ngOnInit(): void {
     this.listenToSearch();
-    this.loadProducts(); // Initial load
+    this.loadProducts();
   }
 
 

@@ -14,8 +14,11 @@ namespace OnlineGroceryPortal.Repositories
 
         public async Task<List<Product>> GetAllAsync()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Products
+                .Where(p => !p.IsDeleted)
+                .ToListAsync();
         }
+
 
         public async Task<Product> AddAsync(Product product)
         {
@@ -32,7 +35,7 @@ namespace OnlineGroceryPortal.Repositories
         public async Task<List<Product>> GetByTypeAsync(string type)
         {
             return await _context.Products
-                .Where(p => p.Type.ToLower() == type.ToLower())
+                .Where(p => p.Type.ToLower() == type.ToLower() && !p.IsDeleted)
                 .ToListAsync();
         }
 

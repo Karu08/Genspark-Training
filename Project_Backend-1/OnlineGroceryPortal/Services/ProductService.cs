@@ -4,6 +4,8 @@ using OnlineGroceryPortal.Interfaces;
 using OnlineGroceryPortal.Models;
 using OnlineGroceryPortal.Contexts;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Encodings.Web;
+using System.Text.RegularExpressions;
 
 
 namespace OnlineGroceryPortal.Services
@@ -26,7 +28,7 @@ namespace OnlineGroceryPortal.Services
             {
                 Id = p.Id,
                 Name = p.ProdName,
-                Description = p.Description,
+                Description = HtmlEncoder.Default.Encode(p.Description),
                 Type = p.Type,
                 Price = p.Price,
                 Stock = p.StockQty
@@ -68,10 +70,11 @@ namespace OnlineGroceryPortal.Services
 
         public async Task<ProductDto> AddProductAsync(CreateProductDto dto)
         {
+            var cleanDescription = StripHtmlTags(dto.Description);
             var product = new Product
             {
                 ProdName = dto.Name,
-                Description = dto.Description,
+                Description = cleanDescription,
                 Type = dto.Type,
                 Price = dto.Price,
                 StockQty = dto.Stock
@@ -82,12 +85,12 @@ namespace OnlineGroceryPortal.Services
 
             return new ProductDto
             {
-            Id = product.Id,
-            Name = product.ProdName,
-            Description = product.Description,
-            Type = product.Type,
-            Price = product.Price,
-            Stock = product.StockQty
+                Id = product.Id,
+                Name = product.ProdName,
+                Description = product.Description,
+                Type = product.Type,
+                Price = product.Price,
+                Stock = product.StockQty
             };
 
         }
@@ -99,17 +102,18 @@ namespace OnlineGroceryPortal.Services
 
             product.ProdName = dto.Name;
             product.Price = dto.Price;
+            product.StockQty = dto.Stock;
 
             var updated = await _repo.UpdateAsync(product);
 
             return new ProductDto
             {
-            Id = product.Id,
-            Name = product.ProdName,
-            Description = product.Description,
-            Type = product.Type,
-            Price = product.Price,
-            Stock = product.StockQty
+                Id = product.Id,
+                Name = product.ProdName,
+                Description = product.Description,
+                Type = product.Type,
+                Price = product.Price,
+                Stock = product.StockQty
             };
         }
 
@@ -118,28 +122,37 @@ namespace OnlineGroceryPortal.Services
             var product = await _repo.GetByIdAsync(id);
             if (product == null) throw new Exception("Product not found");
 
-            await _repo.DeleteAsync(product);
+            product.IsDeleted = true;
+            await _context.SaveChangesAsync();
+
         }
 
         public async Task<List<ProductDto>> GetPagedProductsAsync(int pageNumber, int pageSize)
-{
-    var products = await _context.Products
-        .OrderBy(p => p.ProdName)
-        .Skip((pageNumber - 1) * pageSize)
-        .Take(pageSize)
-        .ToListAsync();
+        {
+            var products = await _context.Products
+                .OrderBy(p => p.ProdName)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
 
-    return products.Select(p => new ProductDto
-    {
-        Id = p.Id,
-        Name = p.ProdName,
-        Description = p.Description,
-        Type = p.Type,
-        Price = p.Price,
-        Stock = p.StockQty
-    }).ToList();
-}
+            return products.Select(p => new ProductDto
+            {
+                Id = p.Id,
+                Name = p.ProdName,
+                Description = p.Description,
+                Type = p.Type,
+                Price = p.Price,
+                Stock = p.StockQty
+            }).ToList();
+        }
 
+
+        private static string StripHtmlTags(string input)
+        {
+            return string.IsNullOrWhiteSpace(input)
+                ? input
+                : Regex.Replace(input, "<.*?>", string.Empty);
+        }
 
     }
 }

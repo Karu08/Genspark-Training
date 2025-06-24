@@ -26,20 +26,17 @@ namespace OnlineGroceryPortal.Controllers
         [HttpPost]
         public async Task<IActionResult> PlaceOrder([FromBody] OrderDto dto)
         {
-            if (dto.CustomerId == 0)
-                return BadRequest("Customer ID is required.");
+            if (dto == null || dto.CustomerId == 0 || dto.Items == null || !dto.Items.Any())
+                return BadRequest("Invalid order data. Please provide customerId and at least one order item.");
 
             var result = await _service.PlaceOrderAsync(dto.CustomerId, dto);
 
-            await _hubContext.Clients.All.SendAsync("OrderPlaced", new
-            {
-                OrderId = result.Id,
-                Status = "Pending",
-                Time = DateTime.Now
-            });
+            if (result == null)
+                return BadRequest("Order could not be placed. Possibly due to insufficient stock or invalid product.");
 
             return Ok(result);
         }
+
 
         [HttpGet("status/{orderId:long}")]
         [SwaggerOperation(Summary = "Track order status", Description = "Returns the current status of the specified order.")]

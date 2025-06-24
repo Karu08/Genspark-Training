@@ -24,7 +24,7 @@ namespace OnlineGroceryPortal.Controllers
             _userRepository = userRepository;
         }
 
-      [HttpPost("register")]
+    [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterDto dto)
     {
         try

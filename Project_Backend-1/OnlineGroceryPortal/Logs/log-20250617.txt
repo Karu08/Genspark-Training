@@ -1,0 +1,24 @@
+2025-06-17 11:05:45.355 +05:30 [INF] Starting up application...
+2025-06-17 11:05:45.612 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-17 11:05:45.672 +05:30 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-06-17 11:05:45.702 +05:30 [DBG] Hosting starting
+2025-06-17 11:05:45.713 +05:30 [INF] User profile is available. Using '/Users/karunya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-17 11:05:45.724 +05:30 [DBG] Reading data from file '/Users/karunya/.aspnet/DataProtection-Keys/key-d15ea09e-8eb9-4eb1-ba76-a62502620350.xml'.
+2025-06-17 11:05:45.730 +05:30 [DBG] Found key {d15ea09e-8eb9-4eb1-ba76-a62502620350}.
+2025-06-17 11:05:45.740 +05:30 [DBG] Considering key {d15ea09e-8eb9-4eb1-ba76-a62502620350} with expiration date 2025-08-31 17:21:26Z as default key.
+2025-06-17 11:05:45.777 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-17 11:05:45.780 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-17 11:05:45.781 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-17 11:05:45.796 +05:30 [DBG] Using key {d15ea09e-8eb9-4eb1-ba76-a62502620350} as the default key.
+2025-06-17 11:05:45.796 +05:30 [DBG] Key ring with default key {d15ea09e-8eb9-4eb1-ba76-a62502620350} was loaded during application startup.
+2025-06-17 11:05:45.833 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-17 11:05:45.836 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-17 11:05:45.849 +05:30 [INF] Now listening on: http://localhost:5263
+2025-06-17 11:05:45.850 +05:30 [DBG] Loaded hosting startup assembly OnlineGroceryPortal
+2025-06-17 11:05:45.850 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 11:05:45.850 +05:30 [INF] Hosting environment: Development
+2025-06-17 11:05:45.850 +05:30 [INF] Content root path: /Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal
+2025-06-17 11:05:45.852 +05:30 [DBG] Hosting started
+2025-06-17 11:06:17.916 +05:30 [INF] Application is shutting down...
+2025-06-17 11:06:17.917 +05:30 [DBG] Hosting stopping
+2025-06-17 11:06:17.929 +05:30 [DBG] Hosting stopped

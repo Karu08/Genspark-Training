@@ -142,3 +142,12 @@
 /Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/obj/Debug/net9.0/OnlineGroceryPortal.Test.pdb
 /Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/obj/Debug/net9.0/OnlineGroceryPortal.Test.genruntimeconfig.cache
 /Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/obj/Debug/net9.0/ref/OnlineGroceryPortal.Test.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.AspNetCore.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Extensions.Hosting.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Extensions.Logging.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Formatting.Compact.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Settings.Configuration.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Sinks.Console.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
+/Users/karunya/Documents/Genspark-Training/Project_Backend-1/OnlineGroceryPortal.Test/bin/Debug/net9.0/Serilog.Sinks.File.dll

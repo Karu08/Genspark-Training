@@ -14,26 +14,24 @@ using System.Security.Claims;
 using Serilog;
 
 
-// Setup Serilog
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
-    .Enrich.FromLogContext()
-    .MinimumLevel.Debug()
-    .CreateLogger();
 
-Log.Information("🔧 Starting up application...");
+// Log.Logger = new LoggerConfiguration()
+//     .WriteTo.Console()
+//     .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+//     .Enrich.FromLogContext()
+//     .MinimumLevel.Debug()
+//     .CreateLogger();
+
+// Log.Information("Starting up application...");
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Host.UseSerilog(); 
+//builder.Host.UseSerilog(); 
 
 var configuration = builder.Configuration;
 
-// Show detailed token validation errors in development
 IdentityModelEventSource.ShowPII = true;
 
-// Add services to the container
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<GroceryDbContext>(options =>
@@ -49,7 +47,7 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
-// Swagger + JWT Auth Support
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -118,19 +116,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Rate Limiting
+
 builder.Services.AddMemoryCache();
 builder.Services.Configure<IpRateLimitOptions>(configuration.GetSection("IpRateLimiting"));
 builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSignalR();
 
-// CORS
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")
+        policy.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500", "http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
@@ -139,7 +137,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Middleware pipeline
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
