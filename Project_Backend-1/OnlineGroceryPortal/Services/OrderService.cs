@@ -20,7 +20,7 @@ namespace OnlineGroceryPortal.Services
 
         public async Task<Order?> PlaceOrderAsync(long customerId, OrderDto orderDto)
 {
-    // STEP 1: Validate stock and collect valid products
+    
     var productMap = new Dictionary<long, Product>();
 
     foreach (var item in orderDto.Items)
@@ -40,10 +40,10 @@ namespace OnlineGroceryPortal.Services
             return null;
         }
 
-        productMap[item.ProductId] = product; // Store for reuse later
+        productMap[item.ProductId] = product; 
     }
 
-    // STEP 2: Create OrderItems with price = unitPrice * quantity
+    
     var orderItems = new List<OrderItem>();
 
     foreach (var item in orderDto.Items)
@@ -59,7 +59,7 @@ namespace OnlineGroceryPortal.Services
         });
     }
 
-    // STEP 3: Create the Order
+    
     var order = new Order
     {
         CustomerId = customerId,
@@ -73,7 +73,7 @@ namespace OnlineGroceryPortal.Services
 
     var savedOrder = await _repo.CreateAsync(order);
 
-    // STEP 4: Deduct stock after order is saved
+    
     foreach (var item in savedOrder.Items)
     {
         var product = productMap[item.ProductId];

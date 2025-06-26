@@ -3,6 +3,11 @@
 
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+
+    <label>
       Username:
       <input type="text" formControlName="username">
     </label>
@@ -15,6 +20,7 @@
     <label>
       Role:
       <select formControlName="role">
+        <br>
         <option value="">Select Role</option>
         <option value="Admin">Admin</option>
         <option value="Customer">Customer</option>
@@ -22,6 +28,18 @@
       </select>
     </label>
 
+    <label>
+      Email Id:
+      <input type="email" formControlName="email">
+    </label>
+
+    <label>
+      Phone no:
+      <input type="text" formControlName="phoneNum">
+    </label>
+    <div *ngIf="registerForm.get('phone')?.invalid && registerForm.get('phone')?.touched" style="color:red">
+  Phone number must be 10 digits.
+    </div>
     <button type="submit" [disabled]="registerForm.invalid">Register</button>
   </form>
 
