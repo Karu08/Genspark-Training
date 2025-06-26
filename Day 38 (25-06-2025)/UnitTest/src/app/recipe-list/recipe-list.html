@@ -1,0 +1,5 @@
+<h2>Recipe List</h2>
+<div *ngIf="loading">Loading recipes...</div>
+<div *ngIf="!loading">
+  <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-item>
+</div>
