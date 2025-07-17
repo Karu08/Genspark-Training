@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp2", "FunctionApp2.csproj", "{B9476BB1-8B47-7E6D-24CA-8ED076A636D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "obj", "obj", "{CA285D67-BB6D-2923-29FD-B5A1C6B8EB24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{DA95AA47-ED09-4F06-18B9-BFDCCE25247A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net6.0", "net6.0", "{9BAA2AED-2379-F26D-30E8-71BD9DB15AB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerExtensions", "obj\release\net6.0\WorkerExtensions\WorkerExtensions.csproj", "{9246AB09-BE80-C18D-C0BB-47E424BF667D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9476BB1-8B47-7E6D-24CA-8ED076A636D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9476BB1-8B47-7E6D-24CA-8ED076A636D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9476BB1-8B47-7E6D-24CA-8ED076A636D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9476BB1-8B47-7E6D-24CA-8ED076A636D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9246AB09-BE80-C18D-C0BB-47E424BF667D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9246AB09-BE80-C18D-C0BB-47E424BF667D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9246AB09-BE80-C18D-C0BB-47E424BF667D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9246AB09-BE80-C18D-C0BB-47E424BF667D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA95AA47-ED09-4F06-18B9-BFDCCE25247A} = {CA285D67-BB6D-2923-29FD-B5A1C6B8EB24}
+		{9BAA2AED-2379-F26D-30E8-71BD9DB15AB2} = {DA95AA47-ED09-4F06-18B9-BFDCCE25247A}
+		{9246AB09-BE80-C18D-C0BB-47E424BF667D} = {9BAA2AED-2379-F26D-30E8-71BD9DB15AB2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {329808D2-B8F4-4C37-A8AF-242896F85612}
+	EndGlobalSection
+EndGlobal
